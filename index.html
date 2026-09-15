@@ -31,6 +31,17 @@
             transition:background .2s,box-shadow .2s;}
   .subtitle.playing{background:#fff0db;box-shadow:0 0 0 2px var(--brand2);}
   footer{text-align:center;color:var(--muted);font-size:12.5px;padding:24px;}
+  .subject-pdf{margin:6px 18px 14px;padding:12px 16px;background:#fff4e6;border:1px dashed var(--brand2);border-radius:12px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+  .pdf-tag{font-size:13px;font-weight:700;color:var(--brand);}
+  .pdf-link{display:inline-block;font-size:15px;font-weight:700;color:#fff;background:var(--brand);text-decoration:none;border-radius:999px;padding:8px 18px;}
+  .pdf-link:hover{background:var(--brand2);}
+  .guide,.transcript{margin:8px 18px 14px;border:1px solid #ffe0b3;border-radius:12px;background:#fffdf7;overflow:hidden;}
+  .guide summary,.transcript summary{cursor:pointer;padding:12px 16px;font-weight:700;color:var(--brand);font-size:15px;}
+  .guide-body,.tr-body{padding:4px 18px 16px;font-size:14.5px;line-height:1.8;}
+  .tr-line{display:flex;gap:10px;padding:6px 0;border-bottom:1px dashed #ffe0b3;}
+  .tr-line:last-child{border-bottom:none;}
+  .tr-label{flex:0 0 auto;font-weight:700;color:var(--brand2);white-space:nowrap;}
+  .tr-text{flex:1;}
 </style></head><body>
 <header>
       <h1>三年级上册课本伴学手册</h1>
@@ -40,6 +51,7 @@
 <div class="tabs"><span class="tab active" data-sub="语文">语文</span><span class="tab" data-sub="数学">数学</span><span class="tab" data-sub="英语">英语</span><span class="tab" data-sub="道法">道法</span><span class="tab" data-sub="科学">科学</span><span class="tab" data-sub="信息">信息</span><span class="tab" data-sub="音乐">音乐</span><span class="tab" data-sub="美术">美术</span><span class="tab" data-sub="体育">体育</span></div>
 <div class="wrap">
 <div class="subject-section" data-sub="语文">
+<div class="subject-pdf"><span class="pdf-tag">📚 本册教材</span><a class="pdf-link" href="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study/main/pdf/g3-yuwen.pdf" target="_blank" rel="noopener">语文教材（点击查看 / 下载）</a></div>
 
     <article class="card">
       <div class="card-head">
@@ -1155,6 +1167,7 @@
     </article>
 </div>
 <div class="subject-section" data-sub="数学" style="display:none">
+<div class="subject-pdf"><span class="pdf-tag">📚 本册教材</span><a class="pdf-link" href="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study/main/pdf/g3-shuxue.pdf" target="_blank" rel="noopener">数学教材（点击查看 / 下载）</a></div>
 
     <article class="card">
       <div class="card-head">
@@ -2233,6 +2246,7 @@
     </article>
 </div>
 <div class="subject-section" data-sub="英语" style="display:none">
+<div class="subject-pdf"><span class="pdf-tag">📚 本册教材</span><a class="pdf-link" href="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study/main/pdf/g3-yingyu.pdf" target="_blank" rel="noopener">英语教材（点击查看 / 下载）</a></div>
 
     <article class="card">
       <div class="card-head">
@@ -5124,7 +5138,7 @@ Be a good guest. Show we care!</span></div><div class="tr-line"><span class="tr-
     </article>
 </div>
 </div>
-<footer><div class="footer-links"><a class="pdf-link" href="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study/main/pdf/g3-yuwen.pdf" target="_blank" rel="noopener">三年级上册·语文教材</a><a class="pdf-link" href="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study/main/pdf/g3-shuxue.pdf" target="_blank" rel="noopener">三年级上册·数学教材</a></div><div class="copyright">版权所有：Viola&amp;Daddy ｜ wilson2000@vip.163.com</div></footer>
+<footer><div class="copyright">版权所有：Viola&amp;Daddy ｜ wilson2000@vip.163.com</div></footer>
 <script>
   const tabs=document.querySelectorAll('.tab');
   const sections=document.querySelectorAll('.subject-section');
