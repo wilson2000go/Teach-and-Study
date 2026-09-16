@@ -1,0 +1,2077 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>一年级上册课本伴学手册</title>
+<style>
+  :root{--bg:#fff7ed;--card:#ffffff;--brand:#e8590c;--brand2:#f08c00;--ink:#343a40;--muted:#868e96;}
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;}
+  header{background:linear-gradient(135deg,#e8590c,#f08c00);color:#fff;padding:36px 20px 30px;text-align:center;}
+  header h1{margin:0 0 8px;font-size:26px;}
+  header p{margin:4px 0;opacity:.95;font-size:14px;}
+  .tabs{position:sticky;top:0;z-index:10;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;
+        background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.06);padding:12px 10px;}
+  .tab{cursor:pointer;border:1px solid var(--brand);color:var(--brand);background:#fff;
+       border-radius:999px;padding:8px 18px;font-weight:700;font-size:15px;}
+  .tab.active{background:var(--brand);color:#fff;}
+  .wrap{max-width:860px;margin:0 auto;padding:22px 16px 60px;}
+  .card{background:var(--card);border-radius:16px;box-shadow:0 4px 18px rgba(0,0,0,.06);margin:18px 0;overflow:hidden;border-left:6px solid var(--brand2);}
+  .card-head{display:flex;gap:12px;align-items:flex-start;padding:16px 18px 6px;}
+  .badge{background:var(--brand);color:#fff;border-radius:999px;padding:6px 12px;font-weight:700;font-size:14px;white-space:nowrap;}
+  .card-head h3{margin:0;font-size:19px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  .tag{font-size:11px;color:#fff;border-radius:6px;padding:2px 8px;font-weight:600;}
+  .sub{font-size:12.5px;color:var(--muted);margin-top:3px;}
+  .player{padding:6px 18px 4px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;}
+  .player-row{width:100%;padding:4px 0;}
+  .pl-label{font-size:13px;color:var(--brand);font-weight:600;}
+  .src2-sel{width:100%;max-width:520px;padding:9px 10px;font-size:15px;border:1px solid #ffd8a8;border-radius:10px;background:#fff7ed;color:var(--ink);}
+  .guide-body p{margin:6px 0;}
+  /* ===== 字幕框（Tier 1 文本字幕） ===== */
+  .subtitle{margin:6px 0 2px;padding:14px 16px;background:#fff4e6;border-radius:10px;
+            font-size:18px;line-height:2;white-space:pre-wrap;color:#212529;width:100%;
+            transition:background .2s,box-shadow .2s;}
+  .subtitle.playing{background:#fff0db;box-shadow:0 0 0 2px var(--brand2);}
+  footer{text-align:center;color:var(--muted);font-size:12.5px;padding:24px;}
+  .brand{text-align:center;margin-bottom:12px;}
+  .brand-logo{max-width:180px;height:auto;display:inline-block;opacity:.95;}
+  .subject-pdf{margin:6px 18px 14px;padding:12px 16px;background:#fff4e6;border:1px dashed var(--brand2);border-radius:12px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+  .pdf-tag{font-size:13px;font-weight:700;color:var(--brand);}
+  .pdf-link{display:inline-block;font-size:15px;font-weight:700;color:#fff;background:var(--brand);text-decoration:none;border-radius:999px;padding:8px 18px;}
+  .pdf-link:hover{background:var(--brand2);}
+  .guide,.transcript{margin:8px 18px 14px;border:1px solid #ffe0b3;border-radius:12px;background:#fffdf7;overflow:hidden;}
+  .guide summary,.transcript summary{cursor:pointer;padding:12px 16px;font-weight:700;color:var(--brand);font-size:15px;}
+  .guide-body,.tr-body{padding:4px 18px 16px;font-size:14.5px;line-height:1.8;}
+  .tr-line{display:flex;gap:10px;padding:6px 0;border-bottom:1px dashed #ffe0b3;}
+  .tr-line:last-child{border-bottom:none;}
+  .tr-label{flex:0 0 auto;font-weight:700;color:var(--brand2);white-space:nowrap;}
+  .tr-text{flex:1;}
+  .back-home{text-align:center;padding:10px 0 2px;}
+  .back-home a{display:inline-block;font-size:14px;font-weight:700;color:#fff;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.55);border-radius:999px;padding:6px 18px;text-decoration:none;}
+  .back-home a:hover{background:rgba(255,255,255,.32);}
+</style></head><body>
+<header>
+      <h1>一年级上册课本伴学手册</h1>
+      <p>小雨老师伴学 · 课文解读 ＋ 课后学习指导 ＋ 板块栏目</p>
+      <p>全册多科助学 · 按课本顺序穿插</p>
+    </header>
+    <div class="back-home"><a href="../index.html">← 返回全部学期</a></div>
+<div class="tabs"><span class="tab active" data-sub="语文">语文</span><span class="tab" data-sub="数学">数学</span><span class="tab" data-sub="道法">道法</span><span class="tab" data-sub="科学">科学</span><span class="tab" data-sub="美术">美术</span><span class="tab" data-sub="体育">体育</span></div>
+<div class="wrap">
+<div class="subject-section" data-sub="语文">
+<div class="subject-pdf"><span class="pdf-tag">📚 本册教材</span><a class="pdf-link" href="https://wilson2000go.github.io/Teach-and-Study/G1S1/pdf/G1S1-yuwen.pdf" target="_blank" rel="noopener">语文教材（点击查看 / 下载）</a></div>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第01期</span>
+        <div>
+          <h3>我是中国人 <span class="tag" style="background:#e8590c">我上学了</span></h3>
+          <div class="sub">我上学了 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/01_语文伴学_一上[我上学了]_我是中国人.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！欢迎来到小学的第一页《我是中国人》。打开课本，你会看到五十六个民族的小朋友，穿着漂亮的民族服装，脸上带着笑容，大家紧紧靠在一起，因为我们都是中国人。</p>
+<p>这一页告诉我们两件重要的事：第一，我们的国家叫中国，我们都有一个共同的家——中华人民共和国；第二，中国是一个大家庭，有五十六个民族，汉族、藏族、维吾尔族、蒙古族、壮族……大家像兄弟姐妹一样相亲相爱。右上角还有一面鲜艳的五星红旗，那是我们的国旗。</p>
+<p>小朋友可以和爸爸妈妈一起看这幅图，指一指图上不同民族的小朋友，说说他们的衣服有什么不一样。还可以跟着老师说一句：我是中国人，我爱我的祖国。把这句话记在心里，你就是我们大家庭里最棒的一员！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第02期</span>
+        <div>
+          <h3>我爱我们的祖国 <span class="tag" style="background:#e8590c">我上学了</span></h3>
+          <div class="sub">我上学了 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/02_语文伴学_一上[我上学了]_我爱我们的祖国.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>上节课我们知道了自己是中国人，这一课《我爱我们的祖国》要带大家看看祖国妈妈长什么样。图上画着五星红旗、北京天安门、长江和黄河，它们都是我们祖国的象征。</p>
+<p>五星红旗是我国的国旗，红红的旗面上有五颗金黄的星星；北京天安门在北京，是我们国家的中心，很多重要的节日都在那里升国旗；长江和黄河是两条很长很长的河，像两条巨龙从西边流到东边，养育了一代又一代中国人。课本里还写着：我爱五星红旗，我爱北京天安门，我爱长江，我爱黄河，我爱中华人民共和国。</p>
+<p>课后小练习：请小朋友拿出彩笔，画一面五星红旗，数一数上面有几颗星星；再请爸爸妈妈讲讲天安门的故事。每天早晨看到国旗升起来，记得立正、行注目礼，心里默默说：祖国妈妈，我爱您！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第03期</span>
+        <div>
+          <h3>我是小学生 <span class="tag" style="background:#e8590c">我上学了</span></h3>
+          <div class="sub">我上学了 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/03_语文伴学_一上[我上学了]_我是小学生.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>告别幼儿园，我们穿上新校服，背上小书包，变成神气的小学生啦！这一课《我是小学生》里有一首好听的《上学歌》，我们一起来念：太阳当空照，花儿对我笑，小鸟说早早早，你为什么背上小书包？我去上学校，天天不迟到，爱学习，爱劳动，长大要为祖国立功劳。</p>
+<p>这首歌告诉我们：当小学生要按时起床、不迟到，要爱学习、爱劳动，长大才能为祖国做贡献。图画里的小朋友背着书包，笑容满面地走进校园，那就是我们自己的样子呀！成为小学生，意味着我们长大了，要学更多本领，交更多朋友。</p>
+<p>课后小练习：今晚请小朋友自己把书包整理好，把明天要用的课本、文具摆整齐；明天早上试着自己穿衣、刷牙，做一个不让大人催的小学生。还可以把《上学歌》唱给爷爷奶奶听，告诉他们：我上小学啦！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第04期</span>
+        <div>
+          <h3>我爱学语文 <span class="tag" style="background:#e8590c">我上学了</span></h3>
+          <div class="sub">我上学了 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/04_语文伴学_一上[我上学了]_我爱学语文.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>成为小学生，我们要学一门特别有意思的课，叫语文。《我爱学语文》这一页告诉我们，学语文可以做三件快乐的事：读书、写字、听故事讲故事。</p>
+<p>第一，读书。你看图上的小朋友捧着书，眼睛看着字，小嘴巴轻轻地读。读书能让我们认识好多字，知道好多故事。第二，写字。写字要坐端正，一笔一画都认真，把字写得工整又漂亮。第三，讲故事、听故事。和小伙伴一起，你讲一个、我讲一个，既能练胆量，又能练说话。语文就是这么有趣，它藏在读书、写字和故事里。</p>
+<p>课后小练习：今天回到家，请小朋友选一本喜欢的图画书，和爸爸妈妈一起读一读；再拿出铅笔，在田字格里认认真真写自己的名字；最后，把今天在学校发生的好玩的事，讲给家人听。你会发现，语文就在我们身边！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第05期</span>
+        <div>
+          <h3>天地人 <span class="tag" style="background:#e8590c">识字</span></h3>
+          <div class="sub">第一单元·识字 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/05_语文伴学_一上[识字]_天地人.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>同学们好，欢迎来到一年级上册语文的第一课《天地人》。这一课我们要认识六个最常用、最基础的字：天、地、人、你、我、他。</p>
+<p>天，是我们头顶上广阔的天空；地，是我们脚下的大地；人，就是我们自己。古人说天、地、人合起来叫三才，世界就是由它们组成的。接着是三个人称：你，是听话的小伙伴；我，是正在说话的自己；他，是旁边的另一位朋友。读的时候注意声调：天 tiān 第一声，地 dì 第四声，人 rén 第二声，你 nǐ 第三声，我 wǒ 第三声，他 tā 第一声。</p>
+<p>识字小练习：请小朋友用手指着天花板说天，指着地板说地，再和爸爸妈妈轮流说你、我、他。还可以在田字格里写一写天、地、人三个字，注意横平竖直。把这些字变成生活中的朋友，识字就一点都不难啦！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第06期</span>
+        <div>
+          <h3>金木水火土 <span class="tag" style="background:#e8590c">识字</span></h3>
+          <div class="sub">第一单元·识字 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/06_语文伴学_一上[识字]_金木水火土.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！今天学习第2课《金木水火土》。这是一首只有四句话的小儿歌，却藏着我们中国人认识世界的大秘密，我们一句一句来念。</p>
+<p>第一句一二三四五，是五个最简单的数字；第二句金木水火土，是古人说的五行，也就是组成世界最基础的五种东西——金是金属，木是树木，水是流水，火是火焰，土是泥土；第三句天地分上下，天在上面、地在下面，这是大自然的位置；第四句日月照今古，太阳和月亮从古时候一直照到现在，照亮了过去和今天。本课要认的字是一二三四五上下，会写的字是一二三上。写一时一个横，二两个横，三三个横，横要平平的；上字先写竖，再写短横，最后写长横，长横稳稳托住上面。</p>
+<p>课后小练习：一、和爸爸妈妈拍手数数，一、二、三、四、五，再倒着数回来；二、用手指在空中写一写一、二、三、上，看看横画是不是平平的；三、在家里找一找，哪些东西是金、木、水、火、土做的，比如木头的桌子、金属的勺子；四、试着背一背这首小儿歌，边背边比划上和下。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第07期</span>
+        <div>
+          <h3>口耳目手足 <span class="tag" style="background:#e8590c">识字</span></h3>
+          <div class="sub">第一单元·识字 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/07_语文伴学_一上[识字]_口耳目手足.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！今天学习第3课《口耳目手足》。我们每个人都有五个身体好朋友，这课用四个小短句教我们怎样爱护它们、用好它们。</p>
+<p>站如松，是说站着要像松树一样挺拔、稳稳的；坐如钟，坐着要像大钟一样端正，不歪歪扭扭；行如风，走路要像风一样轻快、有精神；卧如弓，躺下睡觉要像弯弯的弓一样侧身放松。这八个字告诉我们正确的站、坐、走、躺的样子。本课会认的字是口、耳、目、手、足、站、坐，都是身体和动作的字：口像张开的嘴，目像眼睛里面两横是眼珠，耳像耳朵，手像张开五指，足字上面像膝盖下面像脚丫。会写的字是口、耳、目、手。写口字先写左边竖，再横折，最后封口横，方框要方方正正；目比口多两横，里面两横不碰右边竖；手字上面平撇，中间短横，下面弯钩要圆润有力。</p>
+<p>课后小练习：一、照镜子做动作，站如松、坐如钟、行如风、卧如弓，让爸爸妈妈当小裁判；二、用口、耳、目、手、足各说一句话，比如我用口唱歌、我用耳听声音；三、在空中写一写口、目、耳、手，注意笔画顺序；四、想一想这五个身体朋友分别能帮我们做什么，说给同桌听。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第08期</span>
+        <div>
+          <h3>日月山川 <span class="tag" style="background:#e8590c">识字</span></h3>
+          <div class="sub">第一单元·识字 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/08_语文伴学_一上[识字]_日月山川.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！今天学习第4课《日月山川》。这一课我们要认识八个和自然界有关的字：日、月、山、川、水、火、田、禾。</p>
+<p>这些字特别有趣，因为它们都是象形字，样子和画出来的一样：日是圆圆的太阳，月是弯弯的月亮，山是三座山峰连在一起，川是河流的样子，水是弯弯曲曲的水流，火是跳动的火苗，田是一块块方方的田地，禾是弯着腰的禾苗。古人就是照着这些东西的样子画出字来的。本课会认这八个字，会写的字是日、田、禾、火。写日字要写得长方，里面一横不碰边；田字先写外框再写里面十字；禾字上面是撇和横，下面是木；火字先写左边点、右边撇，再写中间的人和最后的捺。</p>
+<p>课后小练习：一、请小朋友在纸上照着画一画日、月、山、水，看看像不像；二、到窗外找一找，哪里有山、有水、有田；三、在田字格里写一写日、田、禾、火四个字，注意每一笔的位置；四、和爸爸妈妈玩猜字游戏，一个人比划自然物的样子，另一个人猜出对应的字。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第09期</span>
+        <div>
+          <h3>语文园地一 <span class="tag" style="background:#9c36b5">语文园地</span></h3>
+          <div class="sub">第一单元·识字 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/09_语文伴学_一上[语文园地]_语文园地一.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！我们学完了第一单元的生字，现在来到《语文园地一》，这里有好几个好玩的栏目，帮我们把学过的字用起来。</p>
+<p>第一个栏目识字加油站，是一首数字诗：一片两片三四片，五片六片七八片，九片十片无数片，飞入水中都不见——猜猜是什么？是雪花！我们用数字认识了雪。第二个栏目字词句运用，教我们读一读、比一比，区分相似的字。第三个栏目书写提示告诉我们两条笔顺规则：先横后竖，先撇后捺，写字要按规矩来。第四个栏目日积月累是一首古诗《咏鹅》：鹅，鹅，鹅，曲项向天歌。白毛浮绿水，红掌拨清波。最后还有口语交际我说你做，和大人一起读《剪窗花》。</p>
+<p>课后小练习：一、把《咏鹅》背给家人听，边背边学白鹅伸脖子的样子；二、和爸爸妈妈玩我说你做，比如妈妈说举起双手，你就照做；三、试着按先横后竖、先撇后捺的规则，写一写十、八两个字；四、和大人一起读《剪窗花》，看看窗花怎么剪出来。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第10期</span>
+        <div>
+          <h3>快乐读书吧：读书真快乐 <span class="tag" style="background:#d6336c">快乐读书吧</span></h3>
+          <div class="sub">第一单元·识字 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/10_语文伴学_一上[快乐读书吧]_快乐读书吧：读书真快乐.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！这里是《快乐读书吧》，这一期我们要聊一个特别开心的话题——读书真快乐。</p>
+<p>课本上的图画里，有的小朋友在书店里翻书，有的在图书馆排队借书，还有的靠在爸爸妈妈怀里听故事。读书是一件多么幸福的事呀！书里藏着好多好多的故事和本领，认识字以后，我们就能自己打开这一扇扇神奇的门。这一栏目告诉我们要爱上读书，可以把书带回家和爸爸妈妈一起读，也可以和同学交换书看。</p>
+<p>课后小练习：一、今天请小朋友选一本自己喜欢的图画书，安静地读十分钟；二、和爸爸妈妈一起去一次书店或图书馆，挑一本喜欢的书；三、把你读到的有趣故事讲给小伙伴听；四、和同学交换一本书，体会分享的快乐。记住：每天都要读书，读书让我们得到快乐，也得到成长！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第11期</span>
+        <div>
+          <h3>a o e <span class="tag" style="background:#e8590c">汉语拼音</span></h3>
+          <div class="sub">第二单元·汉语拼音 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/11_语文伴学_一上[汉语拼音]_a o e.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！从今天起，我们要走进奇妙的汉语拼音王国，先认识三个最重要的单韵母朋友：a、o、e。</p>
+<p>a 长得像扎辫子的小姑娘，嘴巴张大发 ā；o 像圆圆的公鸡嘴巴，嘴唇圆圆发 ō；e 像一只大白鹅在水里倒着的影子，嘴巴扁扁发 ē。每个韵母都有四声，就像走四级台阶：第一声平平的 ā ō ē，第二声往上升 á ó é，第三声拐个弯 ǎ ǒ ě，第四声往下降 à ò è。我们可以念声调歌：一声平，二声扬，三声拐弯，四声降。课本里还有一首小儿歌：清清小河边，游来鸭和鹅，小鸭 gā gā gā，小鹅 é é é，连声叫我啊啊啊。</p>
+<p>拼读与书写指导：a 占中格，先写左半圆，再写竖右弯；o 一笔写成圆圆的；e 从中格起笔写横再向左围。课后小练习：一、对着镜子发 a、o、e，看看嘴巴的形状；二、给 a、o、e 各标上四声，连读四声；三、在拼音本上每个字母描红一行，注意占格；四、把那首小河边的儿歌读给家人听。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第12期</span>
+        <div>
+          <h3>i u ü <span class="tag" style="background:#e8590c">汉语拼音</span></h3>
+          <div class="sub">第二单元·汉语拼音 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/12_语文伴学_一上[汉语拼音]_i u ü.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>上节课认识了 a、o、e，今天再来三位单韵母朋友：i、u、ü。</p>
+<p>i 像一根小棍加个小点，是衣服的衣；u 像乌鸦的窝，是乌鸦的乌；ü 像小鱼吐泡泡，是小鱼的鱼。它们的四声分别是 ī í ǐ ì、ū ú ǔ ù、ǖ ǘ ǚ ǜ。这里有个小秘密：i 上面标声调时要去掉小点，写成 ī í ǐ ì；而 ü 上面标声调时两点要留住，写成 ǖ ǘ ǚ ǜ，可不能和 u 搞混啦。还有大 y 和大 w 来帮忙：yi 是衣服的衣，wu 是乌鸦的乌，yu 是小鱼的鱼，它们都不用再写小点。</p>
+<p>拼读与书写指导：i 先写竖再写点，占上中格；u 先写竖右弯再写竖，占中格；ü 先写 u 再加两点。课后小练习：一、用手指比划 i、u、ü 的形状；二、给三个韵母各标四声并读准；三、记住标调口诀 i 去点、ü 留点；四、在拼音本上描红，注意 i、ü 的点要写在靠近中线的位置。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第13期</span>
+        <div>
+          <h3>b p m f <span class="tag" style="background:#e8590c">汉语拼音</span></h3>
+          <div class="sub">第二单元·汉语拼音 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/13_语文伴学_一上[汉语拼音]_b p m f.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！现在我们从单韵母走进声母家族，先认识四个声母朋友：b、p、m、f。</p>
+<p>b 像听广播的天线，是广播的播；p 像爬山坡，是山坡的坡；m 像两扇大门，是摸人的摸；f 像老爷爷的拐杖，是佛像的佛。声母要轻又短，和韵母交朋友就拼出音来：b—ā→bā（八个的八），p—á→pá（爬山的爬），m—ā→mā（妈妈的妈），f—ā→fā（发光的发）。拼读口诀是：前音轻短后音重，两音相连猛一碰。课本里有一幅图：爸爸带我爬山坡，爬上山坡看大佛，大喇叭里正广播，爱护大佛不要摸——这就是 b、p、m、f 的发音来源。</p>
+<p>书写指导：b 先写竖再写右半圆，占上中格；p 先写竖再写右半圆，占中下格；m 先写竖再写两个左弯竖；f 先写右弯竖再写横。课后小练习：一、把 b、p 放在一起比一比，一个肚子朝右、一个朝左下；二、拼读 bà ba、mā ma 两个词；三、在拼音本描红；四、用 b、p、m、f 各拼一个词说给家人听。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第14期</span>
+        <div>
+          <h3>d t n l <span class="tag" style="background:#e8590c">汉语拼音</span></h3>
+          <div class="sub">第二单元·汉语拼音 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/14_语文伴学_一上[汉语拼音]_d t n l.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>声母家族又来了四位新朋友：d、t、n、l。</p>
+<p>d 像小马蹄，是马路的搭（dā）；t 像小伞把，是特别特的特；n 像一扇门，是泥土的泥；l 像小木棍，是马路的路。拼读方法还是前音轻短后音重：d—à→dà（大），t—ǔ→tǔ（土），n—í→ní（泥），l—ù→lù（路）。词语有马路、泥土。课本里有一首《小白兔》：小白兔，穿皮袄，耳朵长，尾巴小，三瓣嘴，胡子翘，一动一动总在笑——读的时候注意 tù、ěr、wěi 这些音。</p>
+<p>书写指导：d 先写左半圆再写竖，占上中格；t 先写竖右弯再写横；n 先写竖再写左弯竖，占中格；l 一笔写竖，占上中格。课后小练习：一、比一比 b 和 d、p 和 q，别让它们转错方向；二、拼读 mǎ lù、ní tǔ；三、朗读《小白兔》并加上动作；四、在拼音本上把四个声母描红一行。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第15期</span>
+        <div>
+          <h3>语文园地二 <span class="tag" style="background:#9c36b5">语文园地</span></h3>
+          <div class="sub">第二单元·汉语拼音 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/15_语文伴学_一上[语文园地]_语文园地二.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！学完 b、p、m、f、d、t、n、l，我们来《语文园地二》里练练本领。</p>
+<p>这里有几个实用栏目。识字加油站帮我们认一认身边的字，比如课程表上的字；用拼音栏目教我们用刚学的声母韵母拼出词语，还可以用拼音拼自己的名字、拼同学的名字；字词句运用让我们比一比、读一读，把拼音和汉字连起来。和大人一起读是《小白兔和小灰兔》的故事：小白兔自己种白菜，小灰兔光吃老山羊送的菜，后来小白兔有了吃不完的菜，小灰兔却吃光了——这个故事告诉我们，自己的劳动最香甜。</p>
+<p>课后小练习：一、用拼音拼一拼自己的名字，说给爸爸妈妈听；二、在课程表上圈出你认识的字；三、和爸妈分角色读《小白兔和小灰兔》，说说你更喜欢谁、为什么；四、把 b、p、m、f、d、t、n、l 八个声母按顺序背一遍。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第16期</span>
+        <div>
+          <h3>g k h <span class="tag" style="background:#e8590c">汉语拼音</span></h3>
+          <div class="sub">第三单元·汉语拼音 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/16_语文伴学_一上[汉语拼音]_g k h.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>声母朋友又来了三位：g、k、h。</p>
+<p>g 像一只鸽子的头像，是哥哥的哥；k 像水从水壶里冲出来，是科学的科；h 像一把小椅子，是喝水的喝。拼读：g—ē→gē（哥哥），k—ǎ→kǎ（卡片），h—ā→hā（哈哈笑），词语有画画、打鼓。这里有个小口诀：鸽子鸽子 g g g，蝌蚪蝌蚪 k k k，喝水喝水 h h h。课本里还有一首《说话》：小溪流说话，哗哗，哗哗；小雨点说话，沙沙，沙沙；小鸽子说话，咕咕，咕咕；小鸭子说话，嘎嘎，嘎嘎；小花猫说话，喵喵，喵喵；小青蛙说话，呱呱，呱呱。</p>
+<p>书写指导：g 先写左半圆再写竖左弯，占中下格；k 先写竖再写左斜右斜；h 先写竖再写左弯竖，占上中格。课后小练习：一、拼读 huà huà、dǎ gǔ；二、朗读《说话》，模仿各种小动物叫；三、比一比 g 和 k 的写法；四、在拼音本描红 g、k、h 各一行。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第17期</span>
+        <div>
+          <h3>j q x <span class="tag" style="background:#e8590c">汉语拼音</span></h3>
+          <div class="sub">第三单元·汉语拼音 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/17_语文伴学_一上[汉语拼音]_j q x.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>今天认识三位爱开玩笑的声母：j、q、x。</p>
+<p>j 像一只小公鸡，是公鸡的鸡；q 像气球飞上天，是汽车的汽；x 像一个大叉叉，是西瓜的西。拼读：j—ī→jī（鸡），q—í→qí（旗），x—ī→xī（西），词语有搭积木、下棋。这里有一条非常重要的规矩，请小朋友一定记住：j、q、x，小淘气，看见 ü 眼就挖去——也就是说，j、q、x 和 ü 相拼时，ü 上面的两点要去掉，写成 ju、qu、xu，但读音还是 ü，不是 u。比如 j—ü→ju（居住），q—ü→qu（去），x—ü→xu（须）。</p>
+<p>书写指导：j 先写竖左弯再写点，占上中下格；q 先写左半圆再写竖，占中下格；x 先写右斜再写左斜。课后小练习：一、背诵挖眼睛口诀；二、拼读 jú huā、qí、xǔ；三、朗读《在一起》：小黄鸡，小黑鸡，欢欢喜喜在一起，刨刨土，捉捉虫，青草地上做游戏；四、在拼音本描红 j、q、x 各一行。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第18期</span>
+        <div>
+          <h3>z c s <span class="tag" style="background:#e8590c">汉语拼音</span></h3>
+          <div class="sub">第三单元·汉语拼音 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/18_语文伴学_一上[汉语拼音]_z c s.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>声母家族又有三位：z、c、s。</p>
+<p>z 像个数字 2，是滋味的滋；c 像个刺猬，是刺猬的刺；s 像一条小蛇，是丝绸的丝。它们还有三个不用拼、直接读的整体认读音节：zi、ci、si，发音要长又响。词语有字词、句子。口诀：像个 2 字 z z z，半个圆圈 c c c，半个 8 字 s s s。课本里有一首《过桥》：数学题，三四道，一排等号像小桥。做对了，走过桥，做错了，过不了。想一想，算一算，快快乐乐过了桥——读时注意 sì、dào、zuò 等音。</p>
+<p>书写指导：z 一笔写横折横，占中格；c 一笔写左半圆；s 一笔写弯弯的蛇。课后小练习：一、读准 zi、ci、si 三个整体认读音节，和 z、c、s 比一比长短；二、拼读 zì cí、jù zi；三、朗读《过桥》并打着拍子；四、在拼音本描红 z、c、s 各一行。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第19期</span>
+        <div>
+          <h3>zh ch sh r <span class="tag" style="background:#e8590c">汉语拼音</span></h3>
+          <div class="sub">第三单元·汉语拼音 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/19_语文伴学_一上[汉语拼音]_zh ch sh r.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>今天认识四位翘舌声母：zh、ch、sh、r。</p>
+<p>zh 像 z 加小椅子，是织毛衣的织；ch 像 c 加椅子，是吃饭的吃；sh 像 s 加椅子，是狮子的狮；r 像小树苗发芽，是日头的日。它们也有整体认读音节：zhi、chi、shi、ri，直接读，不用拼。词语有擦桌子、折纸。口诀：z 加椅子 zh zh zh，c 加椅子 ch ch ch，s 加椅子 sh sh sh，小苗发芽 r r r。课本里有一首《绕口令》：四是四，十是十，十四是十四，四十是四十，别把十四当四十，别把四十当十四——这可是练翘舌音的好材料！</p>
+<p>书写指导：zh、ch、sh 都由两个字母组成，要写得靠拢；r 先写竖再写右弯。课后小练习：一、读准 zhi、chi、shi、ri；二、区分平舌 z、c、s 和翘舌 zh、ch、sh，比如只读 shí 和 sí 让你听；三、朗读《绕口令》慢慢读清楚；四、在拼音本描红 zh、ch、sh、r 各一行。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第20期</span>
+        <div>
+          <h3>y w <span class="tag" style="background:#e8590c">汉语拼音</span></h3>
+          <div class="sub">第三单元·汉语拼音 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/20_语文伴学_一上[汉语拼音]_y w.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>声母家族最后两位朋友：y、w。</p>
+<p>y 像树杈，是衣服的衣（yī）；w 像小屋顶，是乌鸦的乌（wū）。它们很会帮忙：单韵母 i、u、ü 不能单独给汉字注音时，y、w 就上前一步，组成整体认读音节 yi、wu、yu。其中 yu 其实是 ü，因为 y 和 ü 相拼也要去掉两点，写成 yu，读音仍是 ü。词语有鱼、鸭子、乌鸦。口诀：大 y 带小 i，一对好兄弟 yi yi yi；大 w 带小 u，一对好伙伴 wu wu wu；大 y 带小 ü，去掉两点还读 yu。课本《哪座房子最漂亮》：哪座房子最漂亮？要数我们的小学堂——读时注意 liàng、fáng、táng。</p>
+<p>书写指导：y 先写右斜再写左斜，占中下格；w 两笔写两个 v。课后小练习：一、读准 yi、wu、yu；二、记住 y 和 ü 相拼去两点的规则；三、拼读 yú、yā zi、wū yā；四、在拼音本描红 y、w 各一行。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第21期</span>
+        <div>
+          <h3>语文园地三 <span class="tag" style="background:#9c36b5">语文园地</span></h3>
+          <div class="sub">第三单元·汉语拼音 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/21_语文伴学_一上[语文园地]_语文园地三.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！声母我们全学完啦，到《语文园地三》来大练兵。</p>
+<p>识字加油站是课程表，认一认语文、数学、音乐、体育这些课的名字。用拼音栏目教我们用拼音认路牌、拼同学名字、读儿歌。字词句运用让我们把声母、韵母、整体认读音节分分类，复习 b、p、m、f 到 y、w 全部声母，还有 ai、ei、ui 等即将学到的复韵母。日积月累里有一首古诗，我们读一读、背一背，感受拼音和汉字的美。和大人一起读可以读有趣的短文，巩固拼读。</p>
+<p>课后小练习：一、看着课程表，用拼音拼出每门课的名字；二、把学过的 23 个声母按顺序背给爸妈听；三、做分类游戏，把 zi、ci、si、zhi、chi、shi、ri、yi、wu、yu 这些整体认读音节挑出来；四、和爸妈一起用拼音拼一句今天想说的话。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第22期</span>
+        <div>
+          <h3>ai ei ui <span class="tag" style="background:#e8590c">汉语拼音</span></h3>
+          <div class="sub">第四单元·汉语拼音 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/22_语文伴学_一上[汉语拼音]_ai ei ui.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>声母学完，我们进入复韵母。第一位复韵母是 ai、ei、ui。</p>
+<p>复韵母就是两个单韵母手拉手：a 和 i 组成 ai（挨着的挨），e 和 i 组成 ei（胖胖的胖 ei），u 和 i 组成 ui（围巾的围）。读的时候从前一个音滑到后一个音，要一口气滑过去。拼读：b—ái→bái（白），m—ěi→měi（美），h—uí→huí（回）。词语有妹妹、奶奶。口诀：a 在前，i 在后，ai ai ai；e 在前，i 在后，ei ei ei；u 在前，i 在后，ui ui ui。课本《洗手歌》：排着队，向前走，做什么？去洗手。肥皂手心擦，手心手背搓，两手一起冲，健康快乐多——洗手也要讲卫生哦。</p>
+<p>书写指导：复韵母要写得紧凑，两个字母要靠拢，占中格。课后小练习：一、对比读 ai、ei、ui，体会滑动；二、拼读 bái、měi、huí、mèi mei、nǎi nai；三、朗读《洗手歌》并真的去洗洗手；四、在拼音本描红三个复韵母各一行。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第23期</span>
+        <div>
+          <h3>ao ou iu <span class="tag" style="background:#e8590c">汉语拼音</span></h3>
+          <div class="sub">第四单元·汉语拼音 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/23_语文伴学_一上[汉语拼音]_ao ou iu.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>复韵母又添三位：ao、ou、iu。</p>
+<p>a 和 o 组成 ao（棉袄的袄），o 和 u 组成 ou（海鸥的鸥），i 和 u 组成 iu（邮票的邮）。注意 iu 的标调规则：iu 并列标在后，所以 iū、iú、iǔ、iù，标在 u 上。拼读：m—āo→māo（猫），x—iǎo→xiǎo（小），sh—ōu→shōu（收），q—iáo→qiáo（桥），t—ái→tái（台）。词语有小猫、小桥、台灯。课本《欢迎台湾小朋友》：一只船，扬白帆，漂呀漂呀到台湾。接来台湾小朋友，到我学校来参观，伸出双手紧紧握，热情的话儿说不完——表达了盼望祖国统一的感情。</p>
+<p>书写指导：ao、ou、iu 都是两个字母，写得靠拢占中格。课后小练习：一、记口诀 iu 并列标在后；二、拼读 xiǎo māo、xiǎo qiáo、tái dēng；三、有感情朗读《欢迎台湾小朋友》；四、在拼音本描红 ao、ou、iu 各一行。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第24期</span>
+        <div>
+          <h3>ie üe er <span class="tag" style="background:#e8590c">汉语拼音</span></h3>
+          <div class="sub">第四单元·汉语拼音 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/24_语文伴学_一上[汉语拼音]_ie üe er.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>今天认识复韵母 ie、üe 和特殊韵母 er。</p>
+<p>i 和 e 组成 ie（椰子的椰），ü 和 e 组成 üe（月儿的月），er 很特别，它是卷舌韵母，不和任何声母相拼，自己就能给字注音，比如儿童的儿 ér、耳朵的 ěr、二两的 èr。ie、üe 还有整体认读音节 ye、yue，直接读。拼读：x—iě→xiě（写），x—üē→xuē（靴），注意 j、q、x 和 üe 相拼同样去两点。词语有月儿、叶子。课本《月儿弯弯》：月儿弯弯挂蓝天，小溪弯弯出青山，大河弯弯流入海，街道弯弯到校园——读起来真好听。</p>
+<p>书写指导：ie、üe 两个字母靠拢，er 先写 e 再写 r。课后小练习：一、读准 ye、yue 整体认读音节；二、拼读 xiě、xuē、yuè er、yè zi；三、朗读《月儿弯弯》并用手比划弯弯的样子；四、在拼音本描红 ie、üe、er 各一行。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第25期</span>
+        <div>
+          <h3>an en in un ün <span class="tag" style="background:#e8590c">汉语拼音</span></h3>
+          <div class="sub">第四单元·汉语拼音 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/25_语文伴学_一上[汉语拼音]_an en in un ün.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>我们进入前鼻韵母：an、en、in、un、ün，它们都有一个共同的尾巴 n。</p>
+<p>a 加 n 是 an（天安门安），e 加 n 是 en（摁门铃的摁），i 加 n 是 in（树荫的荫），u 加 n 是 un（温水的温），ü 加 n 是 ün（云的云）。读的时候先发前面的音，舌尖轻轻抵住上牙床。它们有整体认读音节 yin、yun，还有 yuan（yu 加 an）。拼读：t—án→tán（弹），l—ín→lín（林），j—ūn→jūn（军）。词语有蓝天、白云、草原、森林。课本《家》：蓝天是白云的家，树林是小鸟的家，小河是鱼儿的家，泥土是种子的家，我们是祖国的花朵，祖国就是我们的家——多温暖呀！</p>
+<p>书写指导：前鼻韵母字母多，要写得紧凑靠拢。课后小练习：一、读准 yin、yun、yuan；二、拼读 lán tiān、bái yún、cǎo yuán、sēn lín；三、有感情朗读《家》，说说自己的家；四、在拼音本描红五个前鼻韵母各一行。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第26期</span>
+        <div>
+          <h3>ang eng ing ong <span class="tag" style="background:#e8590c">汉语拼音</span></h3>
+          <div class="sub">第四单元·汉语拼音 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/26_语文伴学_一上[汉语拼音]_ang eng ing ong.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>最后一组后鼻韵母：ang、eng、ing、ong，它们共同的尾巴是 ng。</p>
+<p>a 加 ng 是 ang（山羊的羊），e 加 ng 是 eng（台灯的灯），i 加 ng 是 ing（老鹰的鹰），o 加 ng 是 ong（时钟的钟）。读时舌头往后缩，鼻子出气。ing 有整体认读音节 ying。拼读：y—áng→yáng（羊），d—ēng→dēng（灯），q—íng→qíng（晴），zh—ōng→zhōng（钟）。词语有游泳、骑自行车、打乒乓球。课本《两只羊》：桥东走来一只羊，桥西走来一只羊，一起走到小桥上，你也不肯让，他也不肯让，扑通掉进河中央——告诉我们朋友间要互相礼让。</p>
+<p>书写指导：后鼻韵母字母多，注意靠拢占格。课后小练习：一、读准 ying；二、对比前鼻音 an 和后鼻音 ang，en 和 eng，in 和 ing；三、拼读 yóu yǒng、qí、dǎ、yáng；四、朗读《两只羊》并说说懂得了什么道理，在拼音本描红四个后鼻韵母。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第27期</span>
+        <div>
+          <h3>语文园地四 <span class="tag" style="background:#9c36b5">语文园地</span></h3>
+          <div class="sub">第四单元·汉语拼音 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/27_语文伴学_一上[语文园地]_语文园地四.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！汉语拼音全部学完啦，到《语文园地四》来做总复习。</p>
+<p>识字加油站认一认自己的名字和家人的名字里的字。用拼音栏目可以拼读词语、读儿歌，试着自己拼一句完整的话。字词句运用复习整体认读音节、前鼻后鼻音的区分。日积月累是李绅的《悯农》：锄禾日当午，汗滴禾下土。谁知盘中餐，粒粒皆辛苦——提醒我们每粒饭都来之不易，不能浪费。和大人一起读可以读有趣的短文，把拼音用起来。</p>
+<p>课后小练习：一、用拼音拼出爸爸或妈妈的名字；二、把 16 个整体认读音节（zhi chi shi ri zi ci si yi wu yu ye yue yuan yin yun ying）背一遍；三、朗读并背诵《悯农》，吃饭时不剩饭；四、和爸妈一起用拼音写一张小纸条，悄悄放在对方书包里。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第28期</span>
+        <div>
+          <h3>秋天 <span class="tag" style="background:#e8590c">阅读</span></h3>
+          <div class="sub">第五单元·阅读 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/28_语文伴学_一上[阅读]_秋天.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！从拼音王国回来，我们走进课文《秋天》，一起感受秋天的美。</p>
+<p>课文这样写：天气凉了，树叶黄了，一片片叶子从树上落下来。天空那么蓝，那么高。一群大雁往南飞，一会儿排成个人人字，一会儿排成个一字形。啊！秋天来了。读的时候，凉、黄、落这些字要轻轻的，大雁飞要读出舒展的感觉。这篇短文告诉我们秋天到了，天气变凉、树叶飘落、大雁南飞，是季节变化的景象。</p>
+<p>识字写字指导：本课会认的字有秋、气、了、树、叶、黄、片、从、来、飞；会写的字有了一、子、大、人等。注意了字先写横撇再写弯钩，子字先写横撇再写弯钩加横，人字先撇后捺。课后小练习：一、和爸妈去户外找秋天，看树叶是不是黄了；二、朗读课文，用动作表现大雁排成人字和一字形；三、在田字格写一写了、子、大、人；四、背一背这篇美美的短文。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第29期</span>
+        <div>
+          <h3>江南 <span class="tag" style="background:#e8590c">阅读</span></h3>
+          <div class="sub">第五单元·阅读 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/29_语文伴学_一上[阅读]_江南.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！今天学习一首古老的汉代乐府诗《江南》，它唱的是江南水乡采莲的热闹景象。</p>
+<p>课文：江南可采莲，莲叶何田田。鱼戏莲叶间。鱼戏莲叶东，鱼戏莲叶西，鱼戏莲叶南，鱼戏莲叶北。意思是：江南水乡正到采莲时节，莲叶挨挨挤挤多么茂盛。小鱼在莲叶间快活地游戏，一会儿游到东，一会儿游到西，一会儿游到南，一会儿游到北。读的时候，田田要读得饱满，东、西、南、北四个方向要读得轻快有节奏，好像小鱼真在调皮地游。</p>
+<p>识字写字指导：本课会认江、南、可、采、莲、鱼、东、西、北等字；会写可、东、西等字。东字先写横再写撇折、竖钩，西字先写横再写里面两竖加横折。课后小练习：一、边读边用手比划小鱼游向东、西、南、北；二、和爸妈玩方向游戏，妈妈说方向你快速指；三、在田字格写可、东、西；四、把这首诗背下来，还可以画一幅莲叶小鱼图。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第30期</span>
+        <div>
+          <h3>雪地里的小画家 <span class="tag" style="background:#e8590c">阅读</span></h3>
+          <div class="sub">第五单元·阅读 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/30_语文伴学_一上[阅读]_雪地里的小画家.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！下雪天最开心啦，今天《雪地里的小画家》带我们看小动物们怎样画画。</p>
+<p>课文：下雪啦，下雪啦！雪地里来了一群小画家。小鸡画竹叶，小狗画梅花，小鸭画枫叶，小马画月牙。不用颜料不用笔，几步就成一幅画。青蛙为什么没参加？他在洞里睡着啦。原来，小鸡的脚印像竹叶，小狗的像梅花，小鸭的像枫叶，小马的像弯弯的月牙，它们用脚丫当画笔。而青蛙在冬眠，所以没来。读的时候，开头的下雪啦要读出惊喜，最后一句要轻轻的，别吵醒青蛙。</p>
+<p>识字写字指导：本课会认的、鸡、竹、牙、马、用、几、步、蛙、参、加、洞、着等字；会写的竹、马、牙、用、几等。马字先写横折再写竖折折钩，牙字先写横折再写竖钩加撇。课后小练习：一、下雪时去户外踩一踩，看看自己的脚印像什么；二、和爸妈分角色朗读，你读小动物、爸妈读旁白；三、在田字格写竹、马、牙、用、几；四、背一背这篇有趣的课文。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第31期</span>
+        <div>
+          <h3>四季 <span class="tag" style="background:#e8590c">阅读</span></h3>
+          <div class="sub">第五单元·阅读 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/31_语文伴学_一上[阅读]_四季.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！一年四季各有各的美，今天《四季》用四个小角色告诉我们春、夏、秋、冬的样子。</p>
+<p>课文：草芽尖尖，他对小鸟说：我是春天。荷叶圆圆，他对青蛙说：我是夏天。谷穗弯弯，他鞠着躬说：我是秋天。雪人大肚子一挺，他顽皮地说：我就是冬天。看，春天小草发芽，夏天荷花开放，秋天谷子成熟，冬天雪花飘飘。读的时候，草芽要读得轻轻嫩嫩，荷叶圆圆要舒展，谷穗弯弯要谦逊，雪人顽皮要神气。这篇课文用拟人的方法，把四季写活了。</p>
+<p>识字写字指导：本课会认的、尖、说、春、青、蛙、夏、弯、皮、冬等字；会写的天、四、是等。四字先写竖再写横折、里面两笔；是字上面是日、下面是正。课后小练习：一、和爸妈说一说你最喜欢的季节和原因；二、模仿课文句式，说说秋天还能有什么（比如苹果红红，他对人们说我是秋天）；三、在田字格写天、四、是；四、有感情地朗读并背诵《四季》。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第32期</span>
+        <div>
+          <h3>语文园地五 <span class="tag" style="background:#9c36b5">语文园地</span></h3>
+          <div class="sub">第五单元·阅读 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/32_语文伴学_一上[语文园地]_语文园地五.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！学完秋天的四篇课文，到《语文园地五》来练本领啦。</p>
+<p>识字加油站是反义词和方向的字，比如男—女、开—关、正—反、南—北、上—下、大—小，认一认、读一读。字词句运用让我们读一读这些词，把意思相反的放在一起。日积月累里有一首古诗，读读背背，积累优美语言。口语交际是交朋友（我们做朋友），教你怎么大方地介绍自己、主动和同学做朋友。和大人一起读是《拔萝卜》的故事：老爷爷种了个大萝卜，拔不动，叫来老奶奶、小姑娘、小狗、小猫一起拔，人多力量大，终于拔出来啦！</p>
+<p>课后小练习：一、和爸妈玩反义词对对碰，一个人说上你马上说下；二、试着大方地对一位同学说：我叫某某，我喜欢什么，我们做朋友吧；三、朗读并背诵日积月累古诗；四、和全家分角色演一演《拔萝卜》，体会团结力量大。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第33期</span>
+        <div>
+          <h3>口语交际：交朋友 <span class="tag" style="background:#2f9e44">口语交际</span></h3>
+          <div class="sub">第五单元·阅读 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/33_语文伴学_一上[口语交际]_口语交际：交朋友.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！这一期我们专门来练一练口语交际——交朋友，也就是怎样大方地认识新朋友。</p>
+<p>进入小学，我们会遇到很多新同学。怎样交到朋友呢？第一步，看着对方的眼睛，面带微笑；第二步，大大方方介绍自己：你好，我叫什么名字，我今年几岁，我喜欢画画、看书（说一样自己的爱好）；第三步，主动发出邀请：我们做朋友吧，或者问对方：你叫什么名字？你喜欢什么？第四步，认真听对方说话，不打断。说话的时候声音要响亮、清楚，有礼貌地用您、请、谢谢。</p>
+<p>交际小练习：一、对着镜子练习微笑着说：你好，我叫某某，我们做朋友吧；二、和爸爸妈妈互换角色，你当新同学、爸妈当老同学，互相介绍；三、明天到学校，主动和一位不熟的同学说说话，问问他的名字和爱好；四、回家后把今天交到的新朋友名字告诉家人。记住：勇敢开口，朋友就来！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第34期</span>
+        <div>
+          <h3>对韵歌 <span class="tag" style="background:#e8590c">识字</span></h3>
+          <div class="sub">第六单元·识字 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/34_语文伴学_一上[识字]_对韵歌.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！今天学习识字第5课《对韵歌》，这是一首讲究对仗、读起来特别顺口的小韵文。</p>
+<p>课文：云对雨，雪对风。花对树，鸟对虫。山清对水秀，柳绿对桃红。意思是：云和雨相对，雪和风相对；花和树相对，鸟和虫相对；清清的山对着秀美的水，绿绿的柳对着红红的桃。读的时候，每两个字一顿，一前一后像在打拍子，特别好听。对韵歌用两两相对的字，让我们感受汉语的节奏和美。</p>
+<p>识字写字指导：本课会认对、云、雨、风、花、鸟、虫等字；会写的虫、云、山等字。虫字先写竖再写横折、里面一竖加提、最后点；云字先写横再写横折、下面私字底；山字先写中间竖再写竖折、右边竖。课后小练习：一、和爸妈玩对对子，你说云我对雨，你说花我对树；二、在田字格写虫、云、山，注意笔顺；三、找一找生活中成对的东西，比如天对地、上对下；四、把《对韵歌》背给家人听。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第35期</span>
+        <div>
+          <h3>日月明 <span class="tag" style="background:#e8590c">识字</span></h3>
+          <div class="sub">第六单元·识字 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/35_语文伴学_一上[识字]_日月明.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！今天学习识字第6课《日月明》，这是一首会意字儿歌，特别好玩。</p>
+<p>课文：日月明，田力男。小大尖，小土尘。二人从，三人众。双木林，三木森。意思是：日和月合起来是明亮的明，田加力是男人的男；上小下大是尖尖的尖，小加土是灰尘的尘；两个人跟从是从，三个人是众多的众；两棵树是树林的林，三棵树是森林的森。这些字都是由两个简单的字合起来表示新意思，叫会意字。读的时候要一字一顿，把组合讲清楚。</p>
+<p>识字写字指导：本课会认明、力、男、尘、从、众、林、森等字；会写的力、木、心、土等。力字先写横折钩再写撇，木字先写横再写竖、撇、捺。课后小练习：一、和爸妈玩组合游戏，说日加月是什么、人加人是什么；二、想一想还有哪些会意字，比如火上烧东西是灾；三、在田字格写力、木、心、土；四、把这首会意字儿歌背下来。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第36期</span>
+        <div>
+          <h3>小书包 <span class="tag" style="background:#e8590c">识字</span></h3>
+          <div class="sub">第六单元·识字 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/36_语文伴学_一上[识字]_小书包.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！今天学习识字第7课《小书包》，我们一起认识书包里的好伙伴。</p>
+<p>课文先列出文具：橡皮、尺子、作业本、笔袋、铅笔、转笔刀；接着念儿歌：我的小书包，宝贝真不少。课本作业本，铅笔转笔刀。上课静悄悄，下课不乱跑。天天起得早，陪我去学校。读的时候，数文具的名字要清楚，上课静悄悄要轻轻的，天天起得早要精神。这首歌告诉我们，书包里的每件文具都是宝贝，要爱惜它们，上课专心、下课收好。</p>
+<p>识字写字指导：本课会认的、书、包、尺、作、业、本、笔、刀等字；会写的早、书、刀、尺、本等。书字先写横折再写横折钩、竖、点；刀字先写横折钩再写撇；尺字先写横折再写撇、捺。课后小练习：一、打开自己的书包，指一指橡皮、尺子、铅笔在哪里；二、和爸妈一起把书包收拾整齐；三、在田字格写早、书、刀、尺、本；四、念一念儿歌，养成爱惜文具、早睡早起的好习惯。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第37期</span>
+        <div>
+          <h3>升国旗 <span class="tag" style="background:#e8590c">识字</span></h3>
+          <div class="sub">第六单元·识字 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/37_语文伴学_一上[识字]_升国旗.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！今天学习识字第8课《升国旗》，我们一起学习怎样向国旗致敬。</p>
+<p>课文先认词：中国、国旗、五星红旗。接着念：五星红旗，我们的国旗。国歌声中，徐徐升起。迎风飘扬，多么美丽。向着国旗，我们立正。望着国旗，我们敬礼。读的时候，徐徐升起要慢而庄重，立正、敬礼要坚定有力。这首歌告诉我们，五星红旗是我国的国旗，升旗时要立正、脱帽、行注目礼或队礼，表达对祖国的尊敬与热爱。</p>
+<p>识字写字指导：本课会认的、国、旗、五、星、红、升、中、们、声、起等字；会写的中、五、风、立、正等。中字先写竖再写横折、里面竖、封口横；五字先写横再写竖、横折、长横；正字先写横再写竖、短横、竖、长横。课后小练习：一、画一面五星红旗，认一认一颗大星和四颗小星；二、周一参加学校升旗仪式，练习立正、敬礼；三、在田字格写中、五、立、正；四、把《升国旗》念给家人听，说说升旗时该怎么做。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第38期</span>
+        <div>
+          <h3>语文园地六 <span class="tag" style="background:#9c36b5">语文园地</span></h3>
+          <div class="sub">第六单元·识字 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/38_语文伴学_一上[语文园地]_语文园地六.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！识字单元学完啦，到《语文园地六》来复习巩固。</p>
+<p>识字加油站认一认学校里的字，比如学校、老师、班级、同学，还有厕所、食堂等场所名称。书写提示教我们两条新笔顺规则：先中间后两边（比如小、水），先外后内（比如月、问），写字更顺手。日积月累是李白的《古朗月行》（节选）：小时不识月，呼作白玉盘。又疑瑶台镜，飞在青云端——把月亮想象成白玉盘和瑶台镜，多美呀！和大人一起读是《小松鼠找花生》：小松鼠看见花生开花，以为能收获花生，可是叶子黄了也不见花生，原来花生是长在地下的。</p>
+<p>课后小练习：一、在校园里找一找你认识的字，比如校、班、厕；二、按先中间后两边、先外后内规则写小、水、月、问；三、朗读背诵《古朗月行》；四、和爸妈一起读《小松鼠找花生》，想想花生为什么找不到。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第39期</span>
+        <div>
+          <h3>小小的船 <span class="tag" style="background:#e8590c">阅读</span></h3>
+          <div class="sub">第七单元·阅读 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/39_语文伴学_一上[阅读]_小小的船.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！今天学习阅读第5课《小小的船》，这是一首充满想象的小诗。</p>
+<p>课文：弯弯的月儿小小的船，小小的船儿两头尖。我在小小的船里坐，只看见闪闪的星星蓝蓝的天。意思是：弯弯的月亮像一只小小的船，船儿两头尖尖的；我坐在月亮船里，周围是闪闪的星星和蓝蓝的天空。读的时候，弯弯的、小小的要读得轻柔，闪闪的、蓝蓝的要读出明亮和辽阔，好像真飞到了天上。这首诗用比喻，把月亮比作小船，带我们走进梦幻的夜空。</p>
+<p>识字写字指导：本课会认的、船、两、头、在、里、看、见、闪、星等字；会写的月、儿、头、里等。月字先写竖撇再写横折钩、里面两横；儿字先写撇再写竖弯钩；头字先写点、横、撇、点；里字先写日再写土。课后小练习：一、晚上抬头看月亮，说说它像不像小船；二、画一幅我在月亮船里看星星的画；三、在田字格写月、儿、头、里；四、有感情朗读并背诵《小小的船》。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第40期</span>
+        <div>
+          <h3>影子 <span class="tag" style="background:#e8590c">阅读</span></h3>
+          <div class="sub">第七单元·阅读 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/40_语文伴学_一上[阅读]_影子.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！今天学习阅读第6课《影子》，我们一起发现影子的小秘密。</p>
+<p>课文：影子在前，影子在后，影子常常跟着我，就像一条小黑狗。影子在左，影子在右，影子常常陪着我，它是我的好朋友。读的时候，前、后、左、右要读得清楚，小黑狗、好朋友要读出亲切。这篇课文告诉我们，影子总是跟着我们、陪着我们，太阳在前影子在后，太阳在左影子在右，影子像忠实的小伙伴。</p>
+<p>识字写字指导：本课会认的、影、前、后、黑、狗、左、右、它、好、朋、友等字；会写的在、后、我、好等。在字先写横、撇、竖、横、竖、横；后字先写撇再写横折、横、竖折；我字先写撇再写横、竖钩、提、斜钩、撇、点；好字左边女、右边子。课后小练习：一、晴天到太阳下走一走，看看影子在前还是在后、在左还是在右；二、和爸妈玩影子游戏，用手做小兔、老鹰的影子；三、在田字格写在、后、我、好；四、朗读并背诵《影子》。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第41期</span>
+        <div>
+          <h3>两件宝 <span class="tag" style="background:#e8590c">阅读</span></h3>
+          <div class="sub">第七单元·阅读 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/41_语文伴学_一上[阅读]_两件宝.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！今天学习阅读第7课《两件宝》，它告诉我们人身上最宝贵的两样东西。</p>
+<p>课文：人有两件宝，双手和大脑。双手会做工，大脑会思考。用手不用脑，事情做不好。用脑不用手，啥也办不到。用手又用脑，才能有创造。意思是：人有两件宝贝，一是双手，二是大脑。手会干活，脑会想事情；只用脑不动手，事情做不成，只动手不动脑，也办不好；又动手又动脑，才能做出新东西。读的时候，两件宝要读得神气，才能有创造要读得响亮。</p>
+<p>识字写字指导：本课会认的、件、有、和、做、也、办、到、又、才等字；会写的才、人、手、大等。才字先写横再写竖钩、撇；手字先写平撇再写短横、弯钩；大字先写横再写撇、捺。课后小练习：一、和爸妈说说双手和大脑分别帮你做了什么；二、动手又动脑做一件小手工，比如折纸船；三、在田字格写才、人、手、大；四、把《两件宝》背给家人听，记住又动手又动脑。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第42期</span>
+        <div>
+          <h3>语文园地七 <span class="tag" style="background:#9c36b5">语文园地</span></h3>
+          <div class="sub">第七单元·阅读 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/42_语文伴学_一上[语文园地]_语文园地七.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！学完一组阅读课文，到《语文园地七》来练一练。</p>
+<p>识字加油站认一认家人的称呼：哥哥、姐姐、弟弟、妹妹、爸爸、妈妈、伯伯、叔叔、爷爷、奶奶，把家里的亲人名字都认一认。字词句运用让我们读词语、比一比，把意思相近或相反的归类。日积月累里有一首古诗，读读背背。口语交际是用多大的声音说话，教我们不同场合用不同音量：在图书馆、课堂上要小声，在台上发言、叫人时要大声。和大人一起读是《猴子捞月亮》：小猴子看见井里有月亮，叫大家来捞，结果什么也没捞到，原来那是月亮的倒影。</p>
+<p>课后小练习：一、画一棵家庭树，标出爷爷奶奶、爸爸妈妈、兄弟姐妹的名字；二、和爸妈演一演：在图书馆小声说、在台上大声说；三、朗读背诵日积月累古诗；四、分角色读《猴子捞月亮》，说说为什么捞不到。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第43期</span>
+        <div>
+          <h3>口语交际：用多大的声音说话 <span class="tag" style="background:#2f9e44">口语交际</span></h3>
+          <div class="sub">第七单元·阅读 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/43_语文伴学_一上[口语交际]_口语交际：用多大的声音说话.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！这一期我们专门练口语交际——用多大的声音说话，也就是学会控制音量。</p>
+<p>说话声音不是越大越好，要分场合：第一，在图书馆、阅览室、医院走廊，大家需要安静，我们要小声说话，轻轻地说，别影响别人；第二，在课堂上小组讨论可以小声，但回答老师问题、上台发言要大声，让全班听清；第三，在操场上、叫远处的人，要用洪亮的大声；第四，和长辈说话要有礼貌、音量适中。记住一句口诀：该小声时小声，该大声时大声，做个有礼貌的会说话的小学生。</p>
+<p>交际小练习：一、和爸妈设置场景：图书馆里借书、课堂上发言、操场叫同学，分别用合适的音量说一句话；二、玩音量游戏，妈妈说场景你马上说该大声还是小声；三、在学校里观察，看看谁说话音量合适、谁太大声；四、回家教弟弟妹妹：在别人看书时要小声。会控制声音，才是真正会交际！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第44期</span>
+        <div>
+          <h3>比尾巴 <span class="tag" style="background:#e8590c">阅读</span></h3>
+          <div class="sub">第八单元·阅读 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/44_语文伴学_一上[阅读]_比尾巴.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！今天学习阅读第8课《比尾巴》，这是一首问答形式的儿歌，特别有趣。</p>
+<p>课文用一问一答：谁的尾巴长？谁的尾巴短？谁的尾巴好像一把伞？猴子的尾巴长，兔子的尾巴短，松鼠的尾巴好像一把伞。谁的尾巴弯？谁的尾巴扁？谁的尾巴最好看？公鸡的尾巴弯，鸭子的尾巴扁，孔雀的尾巴最好看。读的时候，问句要扬起声调，答句要肯定清楚。这篇课文让我们认识六种动物尾巴的特点，长、短、弯、扁、好看，语言活泼。</p>
+<p>识字写字指导：本课会认的、尾、巴、谁、长、短、把、伞、兔、最、公等字；会写长、比、巴、把等。长字先写撇再写横、竖提、捺；比字先写横、竖提、撇、竖弯钩；巴字先写横折、竖、横、竖弯钩；把字左边提手旁、右边巴。课后小练习：一、和爸妈玩问答游戏，你问谁的尾巴长、他答猴子；二、说说你还知道哪种动物尾巴什么样；三、在田字格写长、比、巴、把；四、有感情朗读并背诵《比尾巴》。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第45期</span>
+        <div>
+          <h3>乌鸦喝水 <span class="tag" style="background:#e8590c">阅读</span></h3>
+          <div class="sub">第八单元·阅读 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/45_语文伴学_一上[阅读]_乌鸦喝水.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！今天学习阅读第9课《乌鸦喝水》，这是一个聪明的故事。</p>
+<p>课文：一只乌鸦口渴了，到处找水喝。它看见一个瓶子，瓶子里有水，可是水不多，瓶口又小，乌鸦喝不着。怎么办呢？乌鸦看见旁边有许多小石子，想出办法来了。它把小石子一颗一颗地放进瓶子里，瓶子里的水渐渐升高，乌鸦就喝着水了。读的时候，喝不着要读出着急，想出办法要读出聪明，渐渐升高要慢慢读。这个故事告诉我们：遇到困难要动脑筋、想办法。</p>
+<p>识字写字指导：本课会认的、乌、鸦、处、找、办、旁、许、法、放、进、高、升等字；会写只、石、多、出、见等。只字先写口再写八；石字先写横再写撇、口；多字两个夕上下；出字先写竖折、短竖、长竖、竖折、竖；见字先写竖、横折、撇、竖弯钩。课后小练习：一、和爸妈讨论：乌鸦还能想出别的办法吗；二、动手试一试，往装少量水的瓶里放石子，看水是不是升高；三、在田字格写只、石、多、出、见；四、把这个故事讲给家人听，说说你懂得了什么。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第46期</span>
+        <div>
+          <h3>雨点儿 <span class="tag" style="background:#e8590c">阅读</span></h3>
+          <div class="sub">第八单元·阅读 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/46_语文伴学_一上[阅读]_雨点儿.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！今天学习阅读第10课《雨点儿》，这是全册的最后一篇课文，讲雨点落下的故事。</p>
+<p>课文：数不清的雨点儿，从云彩里飘落下来。半空中，大雨点儿问小雨点儿：你要到哪里去？小雨点儿回答：我要去有花有草的地方，那里需要我。大雨点儿说：我要去没有花没有草的地方，让那里长出红的花、绿的草。不久，有花有草的地方花更红、草更绿，没有花没有草的地方长出了红的花、绿的草。读的时候，飘落要读得轻，对话要读出温柔和善意。这个故事告诉我们，雨点儿滋润万物，奉献让人间更美。</p>
+<p>识字写字指导：本课会认的、数、清、彩、空、到、方、没、更、绿、出、长等字；会写问、有、半、从、你等。问字先写点、竖、横折钩、里面口；有字先写横、撇、月；半字先写点、撇、横、横、竖；从字两个人；你字左边单人旁、右边尔。课后小练习：一、下雨时看雨点飘落的样子；二、和爸妈分角色朗读大雨点儿和小雨点儿的对话；三、在田字格写问、有、半、从、你；四、有感情朗读并说说雨点儿为什么可爱。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第47期</span>
+        <div>
+          <h3>语文园地八 <span class="tag" style="background:#9c36b5">语文园地</span></h3>
+          <div class="sub">第八单元·阅读 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/47_语文伴学_一上[语文园地]_语文园地八.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！全册最后一站《语文园地八》，我们做总复习，也为小学生活画上圆满句号。</p>
+<p>识字加油站认一认生活中常见的字，把识字延伸到课外。字词句运用复习本学期学过的字、词、句子，练一练表达。书写提示又教两条笔顺规则：先外后内再封口（比如四、回、田、固），让我们把全包围和半包围的字写端正。日积月累是李峤的《风》：解落三秋叶，能开二月花。过江千尺浪，入竹万竿斜——看不见的风，却能吹落叶、开花、起浪、斜竹，多厉害！和大人一起读是《春节童谣》：小孩小孩你别馋，过了腊八就是年……唱出了过年的热闹。</p>
+<p>课后小练习：一、按先外后内再封口规则写四、回、田；二、朗读背诵《风》，说说风还能做什么；三、和爸妈一起念《春节童谣》，数数过年要做哪些事；四、回顾这一册，你最爱上哪篇课文，讲给家人听，给一年级上册语文学习点个赞！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第48期</span>
+        <div>
+          <h3>口语交际：我会想办法 <span class="tag" style="background:#2f9e44">口语交际</span></h3>
+          <div class="sub">第八单元·阅读 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-yuwen/main/audio/语文/48_语文伴学_一上[口语交际]_口语交际：我会想办法.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！全册最后一次口语交际——我会想办法，教我们遇到困难时怎样动脑筋解决。</p>
+<p>生活中常会遇到小麻烦：铅笔断了没有刀、玩具够不着、和小伙伴闹矛盾……这时候不要慌，先停下来想一想：问题是什么？我有哪些办法？哪个办法最好？可以自己试，也可以请大人、同学帮忙。说话时要把事情说清楚：我先遇到了什么困难，我想了什么办法，最后怎么解决的。这样既锻炼表达，也锻炼思维。</p>
+<p>交际小练习：一、和爸妈轮流说一件自己解决过的小困难，比如怎么够到高处的书；二、玩情境游戏：妈妈假装东西掉沙发底，请你想办法取出；三、把《乌鸦喝水》的故事当作想办法的榜样讲一遍；四、明天遇到小麻烦，先对自己说别急，我想想办法，再行动。会想办法的小朋友，越来越聪明！</p></div></details></div>
+      
+    </article>
+</div>
+<div class="subject-section" data-sub="数学" style="display:none">
+<div class="subject-pdf"><span class="pdf-tag">📚 本册教材</span><a class="pdf-link" href="https://wilson2000go.github.io/Teach-and-Study/G1S1/pdf/G1S1-shuxue.pdf" target="_blank" rel="noopener">数学教材（点击查看 / 下载）</a></div>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第01期</span>
+        <div>
+          <h3>在校园里找一找 <span class="tag" style="background:#e8590c">数学游戏</span></h3>
+          <div class="sub">数学游戏 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/01_数学伴学_一上[数学游戏]_在校园里找一找.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>同学们好，欢迎来到小学！这一节我们跟着聪聪和明明一起，在校园里找一找数学。请你先看看课本第2页的图：学校的国旗上有5颗五角星，你能伸出5根手指表示5吗？教室的窗户是长方形的，教学楼有4层，我们的教室在第2层。数学其实就在我们身边。</p><p>这一节我们主要学习用数学的眼睛观察生活。我们可以在校园里找一找：哪些东西可以用数字1、2、3、4、5来表示？比如1个太阳、2扇大门、3棵树、4层楼、5颗星。还可以找一找不同的形状，比如长方形的窗户、圆圆的钟表。观察的时候，要按照一定的顺序，从上到下、从左到右，才不会漏掉。</p><p>容易出错的地方是：有的小朋友会把“几个”和“第几”搞混。比如教学楼有4层，这是“几个”（一共4层）；我们的教室在“第2层”，这是“第几”（从下往上数排第2）。你能在图上圈出第2层吗？课后和爸爸妈妈在校园里也找一找，看谁找到的数字和形状最多，说给同桌听一听。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第02期</span>
+        <div>
+          <h3>在操场上玩一玩 <span class="tag" style="background:#e8590c">数学游戏</span></h3>
+          <div class="sub">数学游戏 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/02_数学伴学_一上[数学游戏]_在操场上玩一玩.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节我们在操场上做游戏，在玩中认识数和方位。课本里有一个游戏叫“桃花朵朵开，开几朵？开3朵！”听到“开3朵”，就要3个小朋友抱成一团。还有一个游戏：双脚跳进圆形○，单脚跳进三角形△。这既练数数，又认图形。</p><p>还有一种“网小鱼”的游戏，看谁被网住了。图里说“哈哈，网住了4条鱼”，你能数出一共有几条鱼吗？数数时要一个一个地数，数到几就是几。玩“比高矮”时，图里写着“我最高”，我们要会比较谁高谁矮，可以把两个人站到一起比一比。</p><p>学习方法是：玩游戏时一边玩一边数，数清楚再回答。容易错的是跳圈游戏——有的小朋友分不清○和△，记住圆圆的是○，尖尖的是△；还有数鱼时重复数或漏数。课后你可以和同学玩“开几朵”和“单脚双脚跳”的游戏，既开心又能练数数和认图形。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第03期</span>
+        <div>
+          <h3>在教室里认一认 <span class="tag" style="background:#e8590c">数学游戏</span></h3>
+          <div class="sub">数学游戏 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/03_数学伴学_一上[数学游戏]_在教室里认一认.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节我们在教室里认一认。课本第6页告诉我们：一年级有6个班，我们是一（3）班。教室的前面有国旗、黑板，后面有……左边是窗户，右边是……我们要认识教室里的事物和它们的位置。</p><p>这里要学习“前、后、左、右”和“第几”。比如教室前面有黑板，后面有板报；我的左边是窗户，右边是门。图中还说“我们的教室在这里”，要能在楼层示意图上找到自己班的位置。认一认的时候，可以站起来指一指：前面是谁，后面是谁，左边是谁，右边是谁。</p><p>最容易错的是左右分不清。小窍门：写字的那只手是右手，另一只就是左手；也可以记住“左”字下面有“工”。课后请你介绍一下自己：我的前面是××，左边是××。还可以数一数教室里有几扇窗、几盏灯，用数字说一说。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第04期</span>
+        <div>
+          <h3>在教室里玩一玩 <span class="tag" style="background:#e8590c">数学游戏</span></h3>
+          <div class="sub">数学游戏 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/04_数学伴学_一上[数学游戏]_在教室里玩一玩.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节我们在教室里玩“我说你做”的游戏。比如“摸摸你的左耳”，你就要用右手摸左耳；“正话反做”：说“跺你的左脚”，你要故意跺右脚，可别做错啦！还有一个游戏：让“我左边的第3个同学”蹲下，看看自己排第几。</p><p>这里还玩了拼图游戏：用2个圆柱当车轮，用3个黄色三角形和1个红色三角形，一共用了4个三角形。这让我们在玩中巩固“几个”和“第几”，也认识立体图形（圆柱、三角形）。做游戏时要听清楚指令，想清楚再动。</p><p>容易错的是“正话反做”容易顺着做，还有数“左边第3个”时把自己也算进去。记住：数“左边第3个同学”，要从左边第一个开始数，第3个才是；自己一般不算在里面。课后和同桌玩“我说你做”“正话反做”，看谁反应快、做得对。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第05期</span>
+        <div>
+          <h3>学习准备 <span class="tag" style="background:#e8590c">数学游戏</span></h3>
+          <div class="sub">数学游戏 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/05_数学伴学_一上[数学游戏]_学习准备.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节讲学习准备，告诉我们上课要怎么做。课本说：每天8：30开始上课；要认真听讲；举手发言用右手；书本摆在左上角，笔袋放在方便拿的地方。这些都是好习惯。</p><p>我们一起来准备：早上按时到校，上课小眼睛看老师，小耳朵认真听。想发言先举右手，得到允许再说话。书本、文具摆整齐，用的时候一下就能拿到。图里还说“校园里有很多我喜欢的地方”，放学可以和小伙伴分享。</p><p>学习方法是：每天晚上整理好书包，铅笔削好，橡皮准备好。容易错的是书本乱放、发言不举手。养成好习惯，数学会学得更轻松。课后请你和爸爸妈妈一起，把书桌左上角摆上书，右边放笔袋，试试看是不是更整齐啦。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第06期</span>
+        <div>
+          <h3>1~5的认识 <span class="tag" style="background:#e8590c">第一单元</span></h3>
+          <div class="sub">第一单元·1~5的认识 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/06_数学伴学_一上[第一单元]_1~5的认识.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>从这一节开始学数数。课本第13页带着我们认识1、2、3、4、5。图里有1面国旗、2棵树、3个小朋友、4朵花、5只鸭子。数数时要一个一个地数，数到几就写几。</p><p>1还能表示哪些事物？1个苹果、1个人、1本书都可以用1表示。2、3、4、5也一样，只要是那么多东西，都能用对应的数字表示。课本还让我们“拨一拨，数一数”“描一描，写一写”，把数字写得工整漂亮。方法是：数一个指一个，不重复不遗漏；写数时按笔顺，1像小棒，2像小鸭，3像耳朵，4像小旗，5像秤钩。</p><p>容易错的是数数和写数。比如图上东西多时漏数；写5时上面一横写反。练习：课本“做一做”让你照样子圈一圈（5、3、2、4各圈相应个数），再连一连、数一数、写一写，最后用自己喜欢的方式表示1到5，比如画圆圈、画三角形都可以。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第07期</span>
+        <div>
+          <h3>比大小与第几 <span class="tag" style="background:#e8590c">第一单元</span></h3>
+          <div class="sub">第一单元·比大小与第几 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/07_数学伴学_一上[第一单元]_比大小与第几.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节我们学比大小和第几。比大小：当两堆东西一样多，用“=”（等号），读作等于；哪一堆多，多的那边用“>”（大于号），少的用“<”（小于号）。比如3只和3只同样多，写3=3；3比2多，写3>2，也就是2<3。</p><p>第几：图里有5人排队，某人排第2，他前面有1人，后面有3人。这里要分清“几个”和“第几”——“5人”是一共有几个，“第2”是从某边数排在第几位。比大小时，大于号、小于号开口朝大数，尖尖朝小数，可以记成“大嘴巴朝大数”。</p><p>容易错：把大于号和小于号写反，比如把3>2写成3<2；还有把“第几”和“几个”混了。练习：“做一做”让你给第4只小鸟涂色、圈出4只小鸟，再比一比哪堆松果正合适。记住：数“第几”要先定好从哪边数，左还是右。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第08期</span>
+        <div>
+          <h3>分与合 <span class="tag" style="background:#e8590c">第一单元</span></h3>
+          <div class="sub">第一单元·分与合 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/08_数学伴学_一上[第一单元]_分与合.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节学分与合，就是把一个数分成两部分，或者两部分合成一个数。比如5个分成两堆：可以分成1和4、2和3、3和2、4和1。反过来，1和4组成5，2和3组成5，这叫5的分与合。</p><p>课本还让我们试一试：4朵分成两堆，可以分成1和3、2和2、3和1。方法是按顺序分：先分成1和几，再分成2和几……这样又对又全，不会漏。分与合是以后学加法、减法的重要基础，要记熟。</p><p>容易错：分的时漏掉某一组，比如忘了2和3；还有把“分成”和“组成”说反。练习：课本“做一做”让你摆一摆、填一填，比如“3和几组成5”“1和几组成2”，还可以在5只鸟飞进两个笼子时想一想，每个笼子飞进的是不是同样多。建议把2到5的分与合做成卡片天天练。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第09期</span>
+        <div>
+          <h3>练一练（1~5的认识与比较） <span class="tag" style="background:#e8590c">练习</span></h3>
+          <div class="sub">练习·第一单元 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/09_数学伴学_一上[练习]_练一练（1~5的认识与比较）.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节是练一练，把1~5的认识、比大小、第几、分与合一起练一练。课本第22页有这样一题：一排小动物，遮住的是第几个和第几个，遮住了几个？这要你先数清一共5个，再看遮住的位置。</p><p>做题思路：第一，数数要准，从左到右一个一个数；第二，比大小看清楚是“同样多”“多”还是“少”，再填=、>或<；第三，分与合要能立刻说出几和几组成几。比如填4可以分成2和2、1和3等。</p><p>容易错：数“第几”忘了定方向；比大小把符号写反；分与合张冠李戴。课本还有思考题：“我的桃比你的多，它说的一定对吗？”这提醒我们：没数清就不能乱下结论，要动手数一数、比一比。练习时建议你边做边小声说理由，做完了再检查一遍。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第10期</span>
+        <div>
+          <h3>1~5的加、减法 <span class="tag" style="background:#e8590c">第一单元</span></h3>
+          <div class="sub">第一单元·1~5的加、减法 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/10_数学伴学_一上[第一单元]_1~5的加、减法.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节学加法和减法。加法是把两部分合起来，用“+”（加号）。比如3只小鸡又来了1只，一共有4只，写3+1=4，读作3加1等于4。减法是从总数里去掉一部分，用“−”（减号）。比如4只吃掉1只，还剩3只，写4−1=3，读作4减1等于3。</p><p>计算加法可以接着数：从3后面数4、5，所以3+1=4。计算减法可以倒着数：从5倒着数5、4、3，所以5−3=2。方法是看图先想清楚“合起来用加、去掉用减”，再列算式。课本“试一试”让你用3+1=4讲果果和花花的故事，这就是用算式说生活。</p><p>容易错：把加号减号看错，把3+1算成3−1；还有分不清该用加还是减。练习：“做一做”让你看图说算式意思、摆一摆填得数，比如2+2=4、4−2=2、1+3=？课后多摆小棒、多讲数学故事，加减法就不难啦。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第11期</span>
+        <div>
+          <h3>0的认识和加、减法 <span class="tag" style="background:#e8590c">第一单元</span></h3>
+          <div class="sub">第一单元·0的认识和加、减法 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/11_数学伴学_一上[第一单元]_0的认识和加、减法.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节认识0。0表示没有。比如盘子里一个苹果也没有了，就用0表示；尺子上也有0，表示从这里开始。0还可以表示起点。</p><p>0的加、减法很有规律：一个数加上0还得原数，比如4+0=4、5+0=5；一个数减去0也还得原数，比如5−0=5；两个相同的数相减得0，比如3−3=0、5−5=0。想一想：5−0=？当然是5。方法是记住“0表示没有，加上没有、去掉没有都不变；一样多减一样多等于0”。</p><p>容易错：以为5−0=0（错，应是5），或0+0算错。练习：课本“做一做”让你算0+5、5+0、5−0、5−5，以及0+4、4+0、4−0、4−4等，一排算下来你就能发现规律。课后可以对着空盘子说：吃掉最后一个，还剩0个。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第12期</span>
+        <div>
+          <h3>整理和复习（第一单元） <span class="tag" style="background:#e8590c">整理复习</span></h3>
+          <div class="sub">整理复习·第一单元 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/12_数学伴学_一上[整理复习]_整理和复习（第一单元）.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节整理复习第一单元。我们学了：有几个就用几表示；比大小用=、>、<；分与合；还有加法和减法。课本的“知识图”把1~5的分与合、加减小表都画了出来，比如2+2=4、4−2=2，还有0<1<2<3<4<5。</p><p>复习方法是：自己动手制作算式卡片，把0+0到5+0、5−5到0−0全部写出来，再按规律排一排。观察每行最后一个算式的得数，你会发现加法一行比一行大，减法一行比一行小。这能帮我们记熟所有算式。</p><p>练一练里要按顺序填数（0、2、4中间填什么？），还要比大小、填“>3”“<5”。容易错：顺序填数跳着填；比较时符号写反。建议把本单元的“知识图”也画一张，贴在家里天天看，和同学交流你发现了什么规律。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第13期</span>
+        <div>
+          <h3>成长小档案（第一单元） <span class="tag" style="background:#e8590c">成长小档案</span></h3>
+          <div class="sub">成长小档案·第一单元 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/13_数学伴学_一上[成长小档案]_成长小档案（第一单元）.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>本单元结束了，我们来填成长小档案。想一想：你有哪些收获？课本里小朋友说“1可以表示1个太阳、1个人、1棵树”，还说“两个同样的数相减得0”。这就是你这一单元学到的本领。</p><p>这一单元你学会了：会数1到5，会比较多少和第几，会做分与合，还会算5以内的加、减法。特别是知道了“合起来用加法，去掉用减法”，这是很重要的数学思想。</p><p>你可以这样记录成长：画一画1到5分别表示什么，写一写2+3=5、5−2=3这样的算式，再和爸爸妈妈说说“什么情况下用减法”。如果还有不会的，标个小问号，下节课问问老师。为自己鼓鼓掌，你已经是会用数学的小学生啦！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第14期</span>
+        <div>
+          <h3>6~9的认识 <span class="tag" style="background:#e8590c">第二单元</span></h3>
+          <div class="sub">第二单元·6~9的认识 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/14_数学伴学_一上[第二单元]_6~9的认识.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节认识6、7、8、9。6可以表示6个小朋友，7可以表示7朵花，8、9也一样。数数时接着5往后数：5、6、7、8、9、10。</p><p>比大小和第几也要会用：5<6、6<7、7<8、8<9，也就是前面的数小、后面的数大。图里有好几个鱼缸，从左边数第6个鱼缸里有几条鱼？有6条鱼的是第几个鱼缸？这要把“几个”和“第几”分清楚。方法是按顺序数，从左往右，数到几就是第几。</p><p>容易错：数第几时方向搞反；把8和9写反（8是上面一个圈下面一个圈，9是上面一个圈下面一竖）。练习：课本“做一做”让你数一数写一写、比一比，把右边6只海马圈起来，在左边第7只海马上面画个记号。写完多读几遍：六、七、八、九。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第15期</span>
+        <div>
+          <h3>分与合（6、7、8、9） <span class="tag" style="background:#e8590c">第二单元</span></h3>
+          <div class="sub">第二单元·6~9的分与合 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/15_数学伴学_一上[第二单元]_分与合（6、7、8、9）.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节学6、7、8、9的分与合。6朵分成两组：可以1和5、2和4、3和3、4和2、5和1。按顺序分真好，还能成对写：1和5、5和1，2和4、4和2，这样又对又全。7、8、9也一样，按顺序一对一对地分。</p><p>方法是：分一个数时，先分成1和几，再2和几……直到两数一样或调换位置。比如8可以分成1和7、2和6、3和5、4和4；9可以分成1和8、2和7、3和6、4和5。分与合记熟了，后面学加、减法就快。</p><p>容易错：漏掉某一组，或把“分成”说成“组成”。练习：课本让你照样子说几和几组成6、组成7，还问“哪两盘草莓合起来是6个、是7个”。建议你把6到9的分与合也做成卡片，像背儿歌一样天天练，做到脱口而出。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第16期</span>
+        <div>
+          <h3>练一练（6~9的认识） <span class="tag" style="background:#e8590c">练习</span></h3>
+          <div class="sub">练习·第二单元 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/16_数学伴学_一上[练习]_练一练（6~9的认识）.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节练一练，巩固6~9的认识、比大小和分与合。课本让你按0~9的顺序连一连，连完会出现一幅画；还让你按规律接着画，再数一数、写一写有几个、几条。</p><p>做题思路：第一，连数要从0开始按顺序1、2、3……连，别跳；第二，比大小想清谁大谁小，再填>、<或=；第三，分与合要能立刻说“哪两张卡片上的数合起来是6、是8、是9”。比如2和4合起来是6，3和6合起来是9。</p><p>容易错：连线跳着连把图连乱；填“圈出能组成8的两个数”时看漏。还有“我在第几车厢”这类问题，要先定好从哪头数。练习时和同桌互相提一个问题并回答，比如“哪两张卡片合起来是7”，比一比谁说得又快又对。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第17期</span>
+        <div>
+          <h3>6~9的加、减法 <span class="tag" style="background:#e8590c">第二单元</span></h3>
+          <div class="sub">第二单元·6~9的加、减法 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/17_数学伴学_一上[第二单元]_6~9的加、减法.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节学6和7、8和9的加、减法。比如5+1=6，反过来6−1=5；1+5=6，6−5=1。摆一摆就能填：4+2=6、6−2=4、5+2=7、7−2=5。8和9也一样：5+3=8、8−5=3，5+4=9、9−4=5，还有4+4=8、8−4=4。</p><p>课本用“阅读理解—分析解答—回顾反思”教我们解决问题。比如“左边有4只，右边有2只，一共有几只？”把两部分合起来用加法：4+2=6（只）。“一共有7只，跳走2只，还剩几只？”从7里去掉2只用减法：7−2=5（只）。回顾反思时要想：为什么用加、为什么用减。</p><p>容易错：看图列式分不清加还是减，把“还剩”也用加。练习：“做一做”让你算7+1、8+1、9−2等，还让你说图意再计算。小窍门：问题问“一共”用加，问“还剩、走了”用减。多做几道就熟练了。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第18期</span>
+        <div>
+          <h3>练一练（6~9的加、减法） <span class="tag" style="background:#e8590c">练习</span></h3>
+          <div class="sub">练习·第二单元 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/18_数学伴学_一上[练习]_练一练（6~9的加、减法）.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节练一练，把6~9的加、减法练扎实。课本让你移动数字卡片算：6+1、6+0、6+3……一排算下来；还让你拿出两张卡片，用大的减小的，比如7−2=5。</p><p>做题思路：先想数的分与合，再写得数；看图题要先说图里有什么、要解决什么，再列算式。比如“左边有条鱼、右边有条鱼，一共几条”用加；“一共9只，跑走3只，还剩几只”用减：9−3=6。还可以照样子盖住卡片一部分说减法算式。</p><p>容易错：算连加连减时 step 错；把“得数是几”的卡片找错。课本第9题“下面的水果表示几”是思考题：3+4=□+2，想3+4=7，所以□=5；7−□=6−2，右边是4，所以□=3。练习时建议先算一边再算另一边，慢慢想。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第19期</span>
+        <div>
+          <h3>10的认识和加、减法 <span class="tag" style="background:#e8590c">第二单元</span></h3>
+          <div class="sub">第二单元·10的认识和加、减法 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/19_数学伴学_一上[第二单元]_10的认识和加、减法.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节认识10，并学10的加、减法。10可以表示10个手指、10个小朋友。比大小：9<10，10比9大。10的加、减法很有规律：1+9=10、9+1=10、10−1=9、10−9=1；2+8=10、8+2=10……一直到5+5=10、10−5=5。</p><p>方法是利用分与合：10可以分成1和9、2和8、3和7、4和6、5和5，反过来就是加法，去掉一部分就是减法。课本“你知道吗”还介绍我国古代用算筹表示数，真有意思！练的时候可以想：看到10−3，就想到3和7组成10，所以得7。</p><p>容易错：10−3算成13（应是7）；把10的写法写错（1和0，0不能丢）。练习：“做一做”让你找朋友（得数10的连起来）、算6+4、10−8、7+3等。课后和同学玩“出卡片凑10”的游戏：我出8，你出2，8+2=10，特别好玩。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第20期</span>
+        <div>
+          <h3>连加、连减和加减混合 <span class="tag" style="background:#e8590c">第二单元</span></h3>
+          <div class="sub">第二单元·连加连减和加减混合 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/20_数学伴学_一上[第二单元]_连加、连减和加减混合.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节学连加、连减和加减混合。连加：原来5只小鸡，先跑来2只，又跑来1只，算式5+2+1=8，先算5+2=7，再算7+1=8。连减：原来8只，先跑走2只，又跑走2只，8−2−2=4，先算8−2=6，再算6−2=4。</p><p>加减混合：4+3−2=5，先算4+3=7，再算7−2=5；还有4−2+3=5。方法是一步一步算，先算前面两个数，再用得数和第三个数算。图要看清楚：是“又来了”就加，“跑走了”就减。</p><p>容易错：连减时第二步用原数减（应接着用第一步的得数）；加减混合符号看错。练习：“做一做”让你算4+3+□、10−3−□，还有“加2、减2、加4、减5”的接力算。建议边算边用手指或小棒表示每一步，不容易乱。课本“你知道吗”还介绍了古埃及的象形数字，可以读一读。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第21期</span>
+        <div>
+          <h3>整理和复习（第二单元） <span class="tag" style="background:#e8590c">整理复习</span></h3>
+          <div class="sub">整理复习·第二单元 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/21_数学伴学_一上[整理复习]_整理和复习（第二单元）.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节整理复习第二单元。我们认识了6~10，知道了它们的顺序，会算10以内的加、减法，还会连加、连减和加减混合。课本“知识图”把比大小、分与合、加减小表都画了出来。</p><p>复习方法是小组合作：在卡片上写出10以内所有的加法和减法算式，再按规律排。观察第一列算式（0+0、1+0、2+0……）你发现得数就是那个数；计算每行最后一个算式也有规律。还可以说“3+4+3=10”这样的连加。</p><p>练一练要按顺序连线、算混合题（6+3−4、10−6+5）、比大小（3+6○9）、用给出的数写算式。容易错：混合运算顺序错、比大小算错右边。建议把10以内的算式表也做一张，像第一单元那样天天练，你就能又快又准。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第22期</span>
+        <div>
+          <h3>成长小档案（第二单元） <span class="tag" style="background:#e8590c">成长小档案</span></h3>
+          <div class="sub">成长小档案·第二单元 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/22_数学伴学_一上[成长小档案]_成长小档案（第二单元）.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>第二单元结束啦，填成长小档案。课本里小朋友说“我学会了提出数学问题”“我可以用2、8、10写出4个算式”。你呢？这一单元你认识了6到10，会算10以内的加、减法和连加连减。</p><p>你的收获可能有：能按顺序数到10，会比较10以内的大小，会用分与合算题，还会用“阅读理解—分析解答—回顾反思”解决“一共有几只”“还剩几只”的问题。特别是学会了提出数学问题，这很了不起。</p><p>你可以这样记录：用2、8、10写四个算式（2+8=10、8+2=10、10−2=8、10−8=2），再画一画本单元的知识图。还有不会的地方打个问号，问问老师。给自己点个赞，你越来越会用数学啦！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第23期</span>
+        <div>
+          <h3>认识立体图形 <span class="tag" style="background:#e8590c">第三单元</span></h3>
+          <div class="sub">第三单元·认识立体图形 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/23_数学伴学_一上[第三单元]_认识立体图形.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节认识四种立体图形：长方体、正方体、圆柱、球。长方体有平平的面，像书本、文具盒；正方体六个面都一样大，像骰子；圆柱上下两个圆面，能滚动也能立着；球能向四面八方滚动，像皮球。</p><p>学习方法是按形状分一分：把积木分成长方体、正方体、圆柱、球四类。再摸一摸、滚一滚，发现特点：长方体平平的，圆柱能滚动，球滚得最快。还可以说说身边哪些物品是这些形状，比如冰箱是长方体，魔方是正方体。</p><p>容易错：把正方体和长方体搞混（正方体六面一样大），把圆柱和球搞混（圆柱能立住，球立不住）。练习：“做一做”让你“我说你拿”“我说你猜”——“可以立起来，是圆柱吗？还可以滚动”，要能判断。课后找一找家里的立体图形，分类摆一摆。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第24期</span>
+        <div>
+          <h3>练一练（认识立体图形） <span class="tag" style="background:#e8590c">练习</span></h3>
+          <div class="sub">练习·第三单元 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/24_数学伴学_一上[练习]_练一练（认识立体图形）.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节练一练，巩固四种立体图形。课本让你连一连（把图形和名字连上），数一数各有几个长方体、正方体、圆柱、球，一共多少个立体图形。</p><p>做题思路：先看清每个图形是什么，再数数，最后填数。数图形时要做个记号（比如数一个轻轻点一下），防止重复或漏数。还有“接下来应该摆什么？圈出正确答案”，这要你发现排列规律，比如按“球、圆柱、球、圆柱”循环。</p><p>容易错：把竖着的圆柱数成球，或长方体正方体不分；数总数时漏加某一类。练习：“做一做”还让你判断“哪些是用4个正方体拼成的”，要想象拼法。课后用积木搭一搭，边搭边说每块的_shape，图形就牢记啦。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第25期</span>
+        <div>
+          <h3>搭积木与拼一拼 <span class="tag" style="background:#e8590c">第三单元</span></h3>
+          <div class="sub">第三单元·搭积木与拼一拼 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/25_数学伴学_一上[第三单元]_搭积木与拼一拼.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节我们搭积木、拼一拼。课本第70页“搭积木”：要用所有的积木搭得又稳又高。长方体平放比较稳，竖起来搭得高；把球放在3个长方体上面可以放稳。这用了各种积木的特点。</p><p>“拼一拼”：用2个正方体可以拼成一个长方体；用4个相同的正方体能拼出不同的长方体。方法是先想每个图形的特点，再动手试。搭的时候先放大的、平的打底，再往上叠；拼的时候数清用了几个正方体。</p><p>容易错：搭积木时把球放底下（球会滚，不稳）；拼长方体时正方体个数数错。练习：“做一做”让你判断哪些用4个正方体拼成、哪两堆可拼成指定图形。回顾反思：巧妙地运用特点就能搭得又稳又高。课后和同伴比赛搭积木，看谁搭得高又稳。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第26期</span>
+        <div>
+          <h3>整理和复习（第三单元） <span class="tag" style="background:#e8590c">整理复习</span></h3>
+          <div class="sub">整理复习·第三单元 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/26_数学伴学_一上[整理复习]_整理和复习（第三单元）.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节整理复习第三单元。我们认识了长方体、正方体、圆柱、球四种立体图形，知道它们各有特点，还会分类、搭积木、拼一拼。</p><p>复习方法是把四种图形画成“知识图”，写出特点：长方体平平的面、正方体六面一样大、圆柱能滚能立、球到处滚。再想想生活中哪些物品是这些形状，分类摆一摆，和同学交流你发现了什么。</p><p>练一练要连一连、数一数各类个数、发现排列规律。容易错：图形特征记混导致分类错。建议回家收集纸盒、积木、皮球，亲手摸一摸、滚一滚，把特点记在心里。这一单元虽然短，但图形会陪我们学很久哦。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第27期</span>
+        <div>
+          <h3>成长小档案（第三单元） <span class="tag" style="background:#e8590c">成长小档案</span></h3>
+          <div class="sub">成长小档案·第三单元 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/27_数学伴学_一上[成长小档案]_成长小档案（第三单元）.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>第三单元结束啦，填成长小档案。课本里小朋友说“我发现生活中有些物体的形状是长方体，有些是……”“我会用几个相同的正方体拼出长方体”。你发现了什么？</p><p>这一单元你认识了四种立体图形，会按形状分类，会用积木搭得又稳又高，还会用正方体拼出更大的长方体。你学会了观察身边的形状，这是很重要的空间观念。</p><p>你可以这样记录：画一画四种图形并写上名字，再说三个生活中的例子（比如课本是长方体、骰子是正方体、皮球是球）。还有没弄清的打个问号。给自己鼓掌，你已经能当“图形小侦探”啦！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第28期</span>
+        <div>
+          <h3>10的再认识 <span class="tag" style="background:#e8590c">第四单元</span></h3>
+          <div class="sub">第四单元·10的再认识 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/28_数学伴学_一上[第四单元]_10的再认识.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节重新认识10。课本让我们数一数：图上选一种事物，10个一组，数起来既方便又清楚。数出10根小棒，捆成1捆，这1捆就是“1个十”。所以“10个一是1个十”。</p><p>我们还学了数位：右边起第一位是个位，第二位是十位。10写作“10”，十位上的1表示1个十，个位上的0表示个位一个也没有，0不能省，不然就成1了。方法是数到10就捆一捆，看到“10”要想“1个十”。</p><p>容易错：把10写成“1”漏了0；不知10里的1和0各表示什么。练习：“做一做”让你圈出10个再数剩几个，画珠子表示“1个十和几个一”。课后拿10根小棒捆一捆，记住：10个一是1个十，这是学11~20的基础。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第29期</span>
+        <div>
+          <h3>11~20的认识 <span class="tag" style="background:#e8590c">第四单元</span></h3>
+          <div class="sub">第四单元·11~20的认识 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/29_数学伴学_一上[第四单元]_11~20的认识.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节认识11到20。抓一把小棒数一数：数出10根捆成1捆，再接着数11、12……18，19添上1是20（2个十）。读做十一、十二……二十。</p><p>写数要用数位：从右边起第一位是个位，第二位是十位。有1个十在十位写1，有几个一在个位写几。比如11写作“11”，两个1意思不一样（十位1表示1个十，个位1表示1个一）；20写作“20”，2表示2个十，0不能省。方法是“几个十和几个一合起来是十几”。</p><p>容易错：把11的两个1看成一样；20漏写0；数顺序排错（14前面是13、后面是15）。练习：“做一做”让你写一写读一读、我说你摆。还可以排0~20的顺序，说说“12更接近10还是20”。课后用计数器拨一拨，数位就清楚啦。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第30期</span>
+        <div>
+          <h3>练一练（11~20的认识） <span class="tag" style="background:#e8590c">练习</span></h3>
+          <div class="sub">练习·第四单元 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/30_数学伴学_一上[练习]_练一练（11~20的认识）.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节练一练，巩固11~20的认识。课本让你先圈出10只再接着数共几只；用正方体摆出11、13、16、18、20；数一数各有几个；看图写数（看十位个位有几点）。</p><p>做题思路：看到图先想“几个十和几个一”，再写数。比如1个十和4个一组成14。第几的问题：从左边数把第10面圈起来，把右边4面圈起来，从第10面到第15面共有几面（15−10−1=4面，数一数11、12、13、14共4面）。</p><p>容易错：圈“第10面”圈成一堆；算“第10到第15面”多数或少数。还有“15和17中间的数”是16，“比20小1的数”是19。练习时建议边圈边数，写数前先说“几个十几个一”。这一节多练，20以内数就熟了。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第31期</span>
+        <div>
+          <h3>简单的加、减法 <span class="tag" style="background:#e8590c">第四单元</span></h3>
+          <div class="sub">第四单元·简单的加、减法 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/31_数学伴学_一上[第四单元]_简单的加、减法.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节学11~20的简单加、减法。比如10+3=13，表示1个十和3个一合起来是13；13−3=10，去掉3个一剩1个十；13−10=3，去掉1个十剩3个一。还有11+2=13，在个位上加2；13−2=11，在个位上减2。</p><p>方法是看数位：十位的不变，只在个位上加或减。图里标出“加数、加数、和”“被减数、减数、差”，帮你理解。比如13颗，求？颗用13−3=10（颗）；17支求？支用10+7=17。</p><p>容易错：加减时动到十位（一般不动），比如11+2算成13（应是13，对）但要小心；还有13−10算错成3（对）别算成0。练习：“做一做”让你算10+4、11+4、13+5、14−10、15−4等。还有“之间有几人”的问题，下节专门学，先想想小悦排第10、小宇排第15，中间有几人。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第32期</span>
+        <div>
+          <h3>练一练（简单的加、减法） <span class="tag" style="background:#e8590c">练习</span></h3>
+          <div class="sub">练习·第四单元 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/32_数学伴学_一上[练习]_练一练（简单的加、减法）.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节练一练，把11~20的加、减法练熟，重点练“之间有几人”这类题。课本用“阅读理解—分析解答—回顾反思”教：小悦排第10，小宇排第15，“之间”是什么意思？就是两人中间不包括他们自己的人数。</p><p>做题思路：可以数一数（11、12、13、14，共4人），也可以画一画（● ● ● ● 在第10和第15之间）。算加减法时记住只在个位动：10+7=17、19−5=14、16−6=10。比大小想清谁大谁小。</p><p>容易错：算“之间”把两人也算进去（应不算）；“推迟3天”数错（今天星期X，推迟1天是明天……）。练习：“小明住5层、小亮住9层，之间有几层”用9−5−1=3层；“今天读到第14页，读了几页”用14−10+1=5页。多画图，这类题就不难。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第33期</span>
+        <div>
+          <h3>整理和复习（第四单元） <span class="tag" style="background:#e8590c">整理复习</span></h3>
+          <div class="sub">整理复习·第四单元 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/33_数学伴学_一上[整理复习]_整理和复习（第四单元）.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节整理复习第四单元。我们学了数到20，知道10个一是1个十，会读会写11~20，还会简单的加、减法，和10以内比这是新本领。</p><p>复习方法是画“知识图”：写出0~20的顺序，标出十位个位，列出10+3=13、13−3=10、13−10=3这样的算式。对比10以内：现在能用两个数字表示更多的数，真方便。练一练让你估一估再数、画珠子表示17、15、18、20。</p><p>容易错：画珠子时十位个位点错；从火车站到动物园“中间停几站”数错（不算起点站）。建议把11~20的数位表做一张，天天读、写、拨。课本“数学游戏”让你给得数是8、10、13、14的算式涂色，“你知道吗”讲双数单数（2、4、6是双数，1、3、5是单数），都很有趣，玩一玩。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第34期</span>
+        <div>
+          <h3>成长小档案（第四单元） <span class="tag" style="background:#e8590c">成长小档案</span></h3>
+          <div class="sub">成长小档案·第四单元 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/34_数学伴学_一上[成长小档案]_成长小档案（第四单元）.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>第四单元结束啦，填成长小档案。课本里小朋友说“10这个数很特别”“我发现用数数的方法可以解决很多问题”。你有什么收获？</p><p>这一单元你认识了11~20，会看十位个位写数，会算十几加几、减几，还会解决“之间有几人”“推迟几天”这样的问题。你发现10很特别：10个一是1个十，凑成10就好算。</p><p>你可以这样记录：写几个数说说“几个十几个一”，算几道加减法，再画一张知识图。还有不懂的打个问号问老师。给自己鼓掌，你已经能数到20、算20以内的题啦！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第35期</span>
+        <div>
+          <h3>9加几 <span class="tag" style="background:#e8590c">第五单元</span></h3>
+          <div class="sub">第五单元·9加几 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/35_数学伴学_一上[第五单元]_9加几.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节学20以内进位加法，先学9加几。比如9+4=？课本用小欣和小亮的方法：小亮先把4分成1和3，把1放进9凑成10，10+3=13，这叫“凑十法”。</p><p>方法是“看大数、分小数、凑成十、算得数”：算9+4，想9加1得10，所以把4分成1和3，9+1=10，10+3=13。用摆小棒也能验证：9根加4根，拿1根和9根凑成10根，再加3根。练习时多说“9+4=，想9加1得10，10加3得13”。</p><p>容易错：分小数时分错（应分出1给9），或凑十后加错。练习：“做一做”让你圈一圈算9+8、9+3，算9+1+4=、9+5=，发现9+1=10、9+2=12……9+9=18规律。记住：9加几，得数的个位比几少1（9+4=13，3比4少1）。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第36期</span>
+        <div>
+          <h3>练一练（9加几） <span class="tag" style="background:#e8590c">练习</span></h3>
+          <div class="sub">练习·第五单元 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/36_数学伴学_一上[练习]_练一练（9加几）.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节练一练，把9加几练熟。课本让你“移动9，每次用9加上方格里的数”：9+2=11、9+4=13……一排算下来，越算越快。</p><p>做题思路：都用凑十法，想9+1=10。圈一圈填一填，观察9+1=10、9+2=12……发现得数个位依次多1。比大小要先算左边再比：9+5○15，算得14<15，所以填<。</p><p>容易错：凑十后忘记加剩下的数；比大小没算清就填。练习：移动9加方格数、圈一圈找规律、比大小（9+8○16、9+9○17）。小窍门：9加几，得数个位=几−1，比如9+6个位是5，得15。多练这几道，9加几就过关啦。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第37期</span>
+        <div>
+          <h3>8、7、6加几 <span class="tag" style="background:#e8590c">第五单元</span></h3>
+          <div class="sub">第五单元·8、7、6加几 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/37_数学伴学_一上[第五单元]_8、7、6加几.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节学8、7、6加几，还是用凑十法。比如8+5：想8加2得10，把5分成2和3，8+2=10，10+3=13。7+4：想7加3得10，把4分成3和1，得11。6+5：想6加4得10，把5分成4和1，得11。</p><p>还可以灵活凑：算8+9，既可以把9分成2和7（8+2=10，+7=17），也可以把8分成1和7（9+1=10，+7=17），你喜欢哪种都行。方法是“看大数、分小数、凑成十、算得数”，大数是8就分2，是7分3，是6分4。</p><p>容易错：分小数时分的凑十数记错（8要分2不是分1）。练习：“做一做”让你算7+4、6+5、8+4、7+6、6+9、8+7等。课本还用“阅读理解—分析解答—回顾反思”算“一共多少个学生”：8+5=13。多做几道，凑十越来越快。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第38期</span>
+        <div>
+          <h3>练一练（8、7、6加几） <span class="tag" style="background:#e8590c">练习</span></h3>
+          <div class="sub">练习·第五单元 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/38_数学伴学_一上[练习]_练一练（8、7、6加几）.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节练一练，巩固8、7、6加几。课本让你“移动8，每次用8加上方格里的数”，再把8换成3、4、5加一加，越算越顺。</p><p>做题思路：一律凑十法。算体育用品总数：一（1）班7个、一（2）班6个，一共7+6=13个；4根、7根，一共4+7=11根。比大小先算：7+9○15，算得16>15填>。还可以想“5+6=，4+7=，6+7=”发现规律。</p><p>容易错：移卡片加时数错；比大小没先算。练习：上车游戏把算式送进12、13、14、15的车厢（7+7进14，6+9进15……）。建议把8、7、6加几的得数也做成卡片，像前几单元一样天天练，速度和正确率都会提高。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第39期</span>
+        <div>
+          <h3>5、4、3、2加几 <span class="tag" style="background:#e8590c">第五单元</span></h3>
+          <div class="sub">第五单元·5、4、3、2加几 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/39_数学伴学_一上[第五单元]_5、4、3、2加几.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节学5、4、3、2加几。课本用“交换加数位置，和不变”来算：5+8=13，想8+5=13也一样；9+5=14，想5+9=14。这样小的数放前面，用学过的8、7、6加几来算，更简单。</p><p>方法是“小数加大数，想大数加小数”。比如5+8，想成8+5=13；4+7想7+4=11；3+8想8+3=11；2+9想9+2=11。课本“试一试”让你算9+5、9+4、8+3、9+2等，都是反过来想。还有“数学游戏”：找得数是13的卡片（5+8、6+7）。</p><p>容易错：交换后算错，或忘了“和不变”。练习：“做一做”让你算3+8、4+8、5+9、9+4等，再玩找得数13的游戏。小窍门：看到5+7，立刻想7+5=12。这一节把进位加法全部学完，你真棒！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第40期</span>
+        <div>
+          <h3>练一练（5、4、3、2加几） <span class="tag" style="background:#e8590c">练习</span></h3>
+          <div class="sub">练习·第五单元 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/40_数学伴学_一上[练习]_练一练（5、4、3、2加几）.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节练一练，把5、4、3、2加几和前面所有进位加法综合练。课本让你移动8加方格数，把8换成3、4、5再加；还有“上车”游戏把算式送进12~15的车厢。</p><p>做题思路：都用“大数加小数”反着想。算体育用品一共多少（7个+6个=13等）。比大小先算：9+4○13填=，7+9○15填>。第7题“5+6=，4+7=，6+7=”让你发现：一个加数不变，另一个多1，和也多1。</p><p>容易错：综合题里把凑十对象搞混；思考题“交换一个气球使两人和相等”要想清两边各是多少再换。练习8让你填6+□=15（想15−6=9，□=9）。建议把所有进位加法列成大表，横看竖看找规律，这单元就彻底掌握啦。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第41期</span>
+        <div>
+          <h3>整理和复习（第五单元） <span class="tag" style="background:#e8590c">整理复习</span></h3>
+          <div class="sub">整理复习·第五单元 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/41_数学伴学_一上[整理复习]_整理和复习（第五单元）.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节整理复习第五单元。我们学了20以内的进位加法，用“凑十法”算9加几、8/7/6加几，还用“交换加数”算5/4/3/2加几，会画图表解决“原来有多少个”的问题。</p><p>复习方法是小组合作：写出20以内所有进位加法算式，按9+1、9+2……排成表。观察第一列（9+1、8+2、7+3……）得数都是10；第一行（9+1到9+9）依次多1。还会用图解答“领走6个、剩下5个，原来有几个”：6+5=11。</p><p>练一练算3+9、7+7、8+8、9+9，比大小（13○4+8），填加减号（8○5=13、10○5=5）。容易错：把“领走”也用减（应把两部分合起来用加）。思考题“我前面9人后面5人，一共几人”用9+5+1=15。建议把进位加法表背熟，算得飞快。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第42期</span>
+        <div>
+          <h3>成长小档案（第五单元） <span class="tag" style="background:#e8590c">成长小档案</span></h3>
+          <div class="sub">成长小档案·第五单元 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/42_数学伴学_一上[成长小档案]_成长小档案（第五单元）.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>第五单元结束啦，填成长小档案。课本里小朋友说“用‘凑十’的方法算9加几很方便”“我会用加法解决更多的实际问题了”。你的感受呢？</p><p>这一单元你学会了20以内进位加法，掌握了凑十法，还知道交换加数位置得数不变，能解决“一共有几人”“原来有多少个”这样的实际问题。这是这学期最难也最有用的本领之一。</p><p>你可以这样记录：写几道进位加法（9+4=13、8+5=13），说说怎么凑十；再画一画“领走6个剩下5个，原来11个”的图。还有不熟的打个问号多练。给自己大大的赞，你已经会算所有20以内加法啦！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第43期</span>
+        <div>
+          <h3>复习与关联（数与运算·图形·应用提升） <span class="tag" style="background:#e8590c">复习与关联</span></h3>
+          <div class="sub">复习与关联 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/43_数学伴学_一上[复习与关联]_复习与关联（数与运算·图形·应用提升）.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这一节是总复习，把全册知识整理关联。数与运算：我们认识了很多数（0~20），知道10个一是1个十，会加、减法，还会凑十法。比如2+4=6、6−2=4、6+5=11（凑十：6+4=10，+1=11）。</p><p>图形的认识：长方体、正方体、圆柱、球，各有特点，能拼搭。数量关系：把两部分合起来用加法，去掉一部分用减法。应用提升里有很多好玩的题：看表格找规律（第1行1到10，斜着排列），填空格算式表（横看加数变、竖看得数变），还有“游走了3只还剩8只，原来有几只”用8+3=11。</p><p>容易错：看表数错位置、填算式表算错、把“原来有多少”用减。复习方法是先把各单元知识图画出来，再互相讲。建议你把0~20顺序、四种图形、进位加法表都过一遍，这学期就圆满收官啦。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第44期</span>
+        <div>
+          <h3>练一练与自我评价（复习与关联） <span class="tag" style="background:#e8590c">复习与关联</span></h3>
+          <div class="sub">复习与关联 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-shuxue/main/audio/数学/44_数学伴学_一上[复习与关联]_练一练与自我评价（复习与关联）.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>这是总复习的练一练和自我评价。练一练让你看图写数（看十位个位）、填空（1个十和2个一合起来是12，18里有1个十和8个一，20里有2个十）、数立体图形个数、算加减小表（8+7、6+9、9+4……）、比大小。</p><p>还有解决问题：已经吃掉9条鱼，原来有多少条？用加法算总数；小红从3盒小印章买2盒，可能买了多少个，要列举组合。思考题：小明读8页、小华读9页，谁剩下的多？（读得多的剩下少，所以小明剩得多）。自我评价：给自己的表现涂小红花——喜欢数学、爱提问题、不怕困难、会合作等。</p><p>容易错：原来有多少用减（应加）；组合题漏情况。练习时一题一题做，做完用“回顾反思”检查。给自己诚实地涂小红花，哪朵不够红就下学期努力。恭喜你，一年级上册数学全部学完啦！</p></div></details></div>
+      
+    </article>
+</div>
+<div class="subject-section" data-sub="道法" style="display:none">
+<div class="subject-pdf"><span class="pdf-tag">📚 本册教材</span><a class="pdf-link" href="https://wilson2000go.github.io/Teach-and-Study/G1S1/pdf/G1S1-daofa.pdf" target="_blank" rel="noopener">道法教材（点击查看 / 下载）</a></div>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第01期</span>
+        <div>
+          <h3>第1课：开开心心上学去 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第一单元·我是小学生啦 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-daofa/main/audio/道法/01_道法伴学_一上[第1课]_开开心心上学去.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好，我是小雨。今天是你们背上小书包、走进小学的第一天！书里的小朋友王晓和他的小伙伴们，一早就高高兴兴地来到学校。校门口挂着“欢迎新同学”的大牌子，光明小学、立德小学、树人小学都张开双臂迎接大家。见到老师，大家齐声说“老师好”；和小伙伴手拉手，一起蹦蹦跳跳走进校园。学校呀，是一个能学本领、长见识的好地方，所以我们要开开心心地上学去。</p>
+<p>书里还有一个“爱新书，爱书包”的小活动。有的小朋友是爸爸送的新书包，有的是奶奶缝的书皮。我们要学会把新书轻轻包好书皮，给每本书找个家，整整齐齐放进书包；儿歌里还唱道“小书包别着急，我来帮你理一理”。爱护新书新书包，就是爱护我们学习的朋友。</p>
+<p>今天回家，小雨请你们做两件小事情：第一，和爸爸妈妈一起把新书都包好皮、写上名字；第二，明天试着自己整理书包，带齐课本和水杯，做一个“开开心心上学去”的小学生。如果你愿意，还可以约上邻居小伙伴，一起上学、一起做伴哦！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第02期</span>
+        <div>
+          <h3>第2课：我向国旗敬个礼 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第一单元·我是小学生啦 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-daofa/main/audio/道法/02_道法伴学_一上[第2课]_我向国旗敬个礼.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好，我是小雨。升国旗的时候，你知道该怎么做吗？书里告诉我们：当《义勇军进行曲》响起、五星红旗冉冉升起，我们要肃立、脱帽，眼睛看着国旗，行注目礼；如果你已经是少先队员，就庄重地敬一个队礼。五星红旗是我们祖国的国旗，红色是烈士的鲜血，五颗黄色星星代表大团结，我们要打心底里热爱它。</p>
+<p>书里还教我们学唱《中华人民共和国国歌》——义勇军进行曲，要唱得严肃、响亮、不嬉笑；还有一首小诗歌“美丽的旗，庄严的旗，革命的旗，团结的旗”，读起来特别有力量。有的小朋友还分享了国歌背后的故事：在艰苦的岁月里，人们高唱国歌、奋勇向前。我们要记住，国旗和国歌都代表着我们的国家。</p>
+<p>今天的小实践：在家里请爸爸妈妈帮你找一段升国旗的视频，跟着一起立正、敬礼，小声跟唱国歌；明天到学校升旗仪式上，看看谁能站得最直、唱得最认真。小雨相信，你一定能成为一名热爱国旗的好少年！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第03期</span>
+        <div>
+          <h3>第3课：这是我们的校园 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第一单元·我是小学生啦 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-daofa/main/audio/道法/03_道法伴学_一上[第3课]_这是我们的校园.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好，我是小雨。你认识自己的校园吗？书里带着我们“探秘校园”：有跑圈做操的<b>运动场</b>，有安静看书的<b>阅览室</b>，有唱歌跳舞的<b>音乐教室</b>，有做实验的<b>科学教室</b>，还有<b>兴趣活动室</b>和<b>劳动实践基地</b>。有的小朋友最喜欢校园里那个开满花的小<b>花坛</b>，说一到那儿就想笑。</p>
+<p>校园里还有一些“特别的地方”：挂着少先队呼号的队室、香喷喷的餐厅、还有老师办公的老师办公室。我们要记住这些地方在哪儿，去老师办公室要轻轻敲门、小声说话。走楼梯、过走廊要慢慢走，不追跑，注意安全，才能好好发现校园的美好。</p>
+<p>今天回家，小雨请你当“校园小导游”：把书里提到的地方画一张简单的“校园地图”，标出你最喜欢的角落；明天和爸爸妈妈说一说，你在学校最喜欢去哪儿、为什么。悄悄告诉你，熟悉校园，会让你更喜欢上学哦！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第04期</span>
+        <div>
+          <h3>第4课：平平安安回家来 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第一单元·我是小学生啦 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-daofa/main/audio/道法/04_道法伴学_一上[第4课]_平平安安回家来.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好，我是小雨。放学铃响了，怎么回家才安全呢？书里的小朋友回家路各不相同：有的自己走路回家，有的和同伴一起走，有的坐校车。不管走哪条路，我们都要先认准“我的回家路”，记住路口、商店这些小标记，不跟陌生人走，不乱跑。</p>
+<p>书里有一首交通安全小儿歌：“红灯停，绿灯行，黄灯亮了等一等。”过马路要走斑马线、看红绿灯，不在马路上玩耍。还要提醒爸爸妈妈骑车戴头盔、开车系安全带。平平安安，是对自己负责，也是对家人负责。</p>
+<p>回家的路上其实很温暖：有爸爸来接，有奶奶在校门口等，有叔叔帮忙，还有哥哥姐姐牵着小手。今天的小实践：和爸爸妈妈一起把“回家路线图”画下来，标出红绿灯和要注意的地方；明天试着自己认路、跟紧队伍，平平安安回到家，给等你的人一个大大的笑脸！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第05期</span>
+        <div>
+          <h3>第5课：老师，您好！ <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第二单元·过好校园生活 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-daofa/main/audio/道法/05_道法伴学_一上[第5课]_老师，您好！.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好，我是小雨。学校里除了班主任，还有好多老师呢！书里让我们“猜老师”：有一位老师短发、总是笑眯眯；有的老师带乐队，有的老师教武术，有的老师在国旗下讲话，还有图书馆里帮我们借书的老师。原来，老师们各有本领，都在为我们服务。</p>
+<p>遇到麻烦，要勇敢找老师帮忙：水龙头坏了请老师修，想给爸爸妈妈打电话请老师帮着拨。我们也可以帮老师做力所能及的事，比如帮老师拿作业本、摆桌椅。进老师办公室要轻轻敲门、小声说话，不打扰老师工作。对老师有礼貌，老师也会更喜欢我们。</p>
+<p>今天的小实践：认一认学校里教过你、帮过你的老师，明天见到他们大声说一句“老师，您好！”；如果遇到困难，试着自己走到老师面前，有礼貌地说“老师，请您帮帮我”，小雨相信你一定做得到！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第06期</span>
+        <div>
+          <h3>第6课：拉拉手，交朋友 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第二单元·过好校园生活 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-daofa/main/audio/道法/06_道法伴学_一上[第6课]_拉拉手，交朋友.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好，我是小雨。进入小学，我们要认识好多新朋友！书里说，好伙伴可能是你的同桌，可能是一起唱歌的人，也可能是蹲在地上看蚂蚁的小朋友。大家玩“好友大搜索”的游戏，一边唱“一网不捞鱼，二网下小雨……”，一边去认识新朋友；小朋友李明说，他爱吃西瓜、爱踢足球，一下子就找到了志同道合的好朋友。</p>
+<p>朋友能带给我们什么呢？朋友开心时，我们拍拍手一起笑；朋友伤心时，我们唱支歌安慰他。书里教我们：想交朋友，要主动打招呼、记住别人的名字和爱好，一起玩耍、互相帮助。有了朋友，校园生活就更快乐啦。</p>
+<p>今天的小实践：向爸爸妈妈介绍一下你的一个新朋友，说说他（她）喜欢什么；明天到学校，主动和一个还不熟悉的小伙伴拉拉手、说声“我们一起玩吧”。小雨祝你收获满满的友谊！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第07期</span>
+        <div>
+          <h3>第7课：上课了，好好学 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第二单元·过好校园生活 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-daofa/main/audio/道法/07_道法伴学_一上[第7课]_上课了，好好学.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好，我是小雨。“上课了，好好学”，怎么才算会学习呢？书里告诉我们：上课前要先看课程表，把课本、铅笔、橡皮准备好，安静坐好等老师。叮铃铃——上课了，我们要小耳朵认真听、小眼睛仔细看、小脑袋勤思考，积极举手回答老师的问题。</p>
+<p>学习不只是一个人闷头学。书里说，我们可以“一起学”：和同学复习功课、做手工时轮流说说自己的想法，你一言我一语，本领就学得更牢。课后还要认真做作业，把字写工整，做完自己检查一遍。好习惯，是从每一节课、每一次作业开始的。</p>
+<p>今天的小实践：今晚和爸爸妈妈一起，对照课程表把明天的书包整理好；明天上课时，试试“眼睛看老师、耳朵仔细听、小手举得直”，回家给小雨讲一件你课堂上学会的新本领，好吗？</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第08期</span>
+        <div>
+          <h3>第8课：课余生活真丰富 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第二单元·过好校园生活 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-daofa/main/audio/道法/08_道法伴学_一上[第8课]_课余生活真丰富.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好，我是小雨。下课铃“丁零零”一响，课余生活就开始啦！课间先做什么呢？书里提醒我们：可以先望望远处、揉揉眼睛，让眼睛放松一下；再和小伙伴玩安全的小游戏，比如跳绳、拍手歌，不追逐打闹。充足的休息，能让下一节课更有精神。</p>
+<p>课后时光也很精彩：可以帮家里做点小服务，可以参加美术小组画出心中的世界，也可以加入科技小组动手做小实验。书里还教我们安排时间：先把重要的事做完，再去找自己喜欢的兴趣活动。这样，既完成任务，又发展了爱好。</p>
+<p>今天的小实践：和爸爸妈妈一起画一张“我的课余时间表”，写上与课间望远、做作业、玩耍、兴趣活动有关的小安排；明天课间，记得先望远护眼睛，再快乐游戏。小雨期待你丰富多彩的课余生活！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第09期</span>
+        <div>
+          <h3>第9课：作息有规律 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第三单元·养成良好习惯 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-daofa/main/audio/道法/09_道法伴学_一上[第9课]_作息有规律.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好，我是小雨。书里问大家：你几点睡觉、几点起床？有个小朋友晚上九点半就睡了，早上精神饱满；可有的小朋友看电视到很晚，第二天上课直打瞌睡。原来，早睡早起、作息有规律，身体才棒、学习才好。</p>
+<p>如果一个人睡觉害怕怎么办？书里给了小妙招：抱一个喜欢的玩偶陪着你，开着柔和的小夜灯，或者请家人先陪一会儿再离开。还可以让小闹钟帮忙：“丁零零，起床啦！”规律的作息，会让你长高、少生病、心情好。</p>
+<p>今天的小实践：和爸爸妈妈商量一个“作息时间表”，比如晚上九点洗漱、九点半睡觉，早上七点起床；把表贴在床头，连续坚持一周，看看自己是不是变得更有精神。记住哦，周末也别赖床太晚，作息差不多样，身体才会一直棒棒的。小雨给你点个大大的赞！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第10期</span>
+        <div>
+          <h3>第10课：吃饭有讲究 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第三单元·养成良好习惯 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-daofa/main/audio/道法/10_道法伴学_一上[第10课]_吃饭有讲究.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好，我是小雨。“吃饭有讲究”，第一件事就是讲卫生。书里教我们“七步洗手法”：手心搓搓、手背搓搓、指缝交叉搓……把小手洗得干干净净再吃饭，细菌就进不了肚子里。饭前洗手，是对自己身体负责。从今天起，不挑食、不剩饭，把盘中餐吃光光，就是最棒的节约小明星。</p>
+<p>吃饭还要注意营养和安全。书里让食物来“诉说”：白菜说自己“百菜之王”有营养，可毒蘑菇、发了芽的土豆会让人中毒，千万不能吃。餐桌上也有礼仪：咳嗽要转头用手遮一遮，对做饭的人说声“您辛苦了”，不挑食、不剩饭，爱惜每一粒粮食。</p>
+<p>今天的小实践：吃饭前你来做“洗手小监督员”，教家人七步洗手法；吃饭时主动说“妈妈辛苦了”，并把碗里的饭吃光光。小雨相信，你一定会成为懂卫生、懂礼仪的“吃饭小榜样”！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第11期</span>
+        <div>
+          <h3>第11课：对人有礼貌 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第三单元·养成良好习惯 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-daofa/main/audio/道法/11_道法伴学_一上[第11课]_对人有礼貌.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好，我是小雨。一句礼貌的话，能让心里暖暖的。书里说，小妹妹在玩，我们轻轻说“我可以一起玩吗”；见到王爷爷，先请他进门说“您先请”；对辛苦的阿姨说“阿姨辛苦了”。这些小小的礼貌，像阳光一样暖到别人心里。一句轻轻的谢谢、一个甜甜的微笑，就能让身边的人开心一整天。</p>
+<p>礼貌不只是说话，还有动作：见到长辈鞠个躬，见到朋友露微笑，别人说话时认真倾听，需要等待时排好队不插嘴。书里还评出了班里的“礼貌之星”，看看谁天天有礼貌。礼貌不是一天的事，而是每天都要做的好习惯。</p>
+<p>今天的小实践：在家和出门时，试着对三个人说一句有礼貌的话，比如“您好”“请”“谢谢”“对不起”；晚上请爸爸妈妈当评委，数数你今天说了几句礼貌用语。小雨期待你成为人见人爱的“礼貌小天使”！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第12期</span>
+        <div>
+          <h3>第12课：玩也有学问 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第三单元·养成良好习惯 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-daofa/main/audio/道法/12_道法伴学_一上[第12课]_玩也有学问.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好，我是小雨。玩，也有大学问哦！书里提醒我们“安全玩”：不拿剪刀、绳子当玩具，不在楼梯、马路边追逐，玩的时候看好四周。万一不小心受伤了，要马上用冷水冷敷，严重时要打120请医生帮忙。安全，是开心玩耍的大前提。</p>
+<p>玩还要“有节制”：看动画片、打游戏要约定好时间，不能没完没了，保护眼睛和小脑袋。书里还教我们“玩新花样”：用纸片折成小棋子下棋，用废旧纸盒、瓶盖做成“宝贝玩具”。动动小脑筋，普通的东西也能玩出新鲜花样。</p>
+<p>今天的小实践：和爸爸妈妈定一个“玩耍时间表”，写完作业再玩、每次游戏不超过约定时间；再动手用家里的废旧材料，做一个独一无二的“创意玩具”。玩得安全、玩得有节制、玩出好点子，这样的玩才最有学问。小雨等着看你的小发明呢！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第13期</span>
+        <div>
+          <h3>第13课：我们小点儿声 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第四单元·我们讲文明 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-daofa/main/audio/道法/13_道法伴学_一上[第13课]_我们小点儿声.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好，我是小雨。教室里的声音太大，会发生什么？书里说，有的小朋友挪椅子“吱吱响”，有的大声喊叫，吓得小伙伴一跳。原来，吵闹不仅打扰别人学习，还容易让人生气、出危险。我们要当“小小调音师”，把声音调小一点。</p>
+<p>什么时候要小声？书里带我们认识“静”的标志：医院里要安静，让病人休息；图书馆里要轻声，不打扰看书的人。我们在教室讨论可以小声，走廊里要慢走轻语。还可以自己设计“声音标志”，提醒大家“小点儿声”。</p>
+<p>今天的小实践：在家和在学校，都试着把声音调成“小音量”：关门轻轻的、搬椅子不发出刺耳声、说话用“悄悄话”音量。请爸爸妈妈给你贴一张“安静小贴纸”奖励你。当你把声音调小，你会发现身边的人都对你笑了。小雨为你点赞：轻声，也是一种文明！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第14期</span>
+        <div>
+          <h3>第14课：人人爱护公物 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第四单元·我们讲文明 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-daofa/main/audio/道法/14_道法伴学_一上[第14课]_人人爱护公物.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好，我是小雨。什么是“公物”？就是大家共同使用的东西：操场上打球的篮球场、教室里的电风扇、书架上的图书、我们坐的课桌椅，都是公物。书里请我们留心观察：有没有图书被撕坏、桌椅被乱画？公物为大家服务，我们更要爱护它。它们都是大家花钱买来、专门为同学们准备的，要像爱护自己的玩具一样爱护它们。</p>
+<p>爱护公物，可以从小事做起：用完卫生间把马桶冲干净，不在桌子墙上乱涂乱画，把桌椅摆得整整齐齐，用餐时垫上餐垫不弄脏桌面。书里说，“公物大家用，爱护靠每人”。你爱护一点，我爱护一点，公物就能陪我们更久。</p>
+<p>今天的小实践：在学校里找一件公物，比如你坐的椅子，轻轻擦一擦、摆整齐；回家也爱护家里的公共物品。明天和小雨说说，你都保护了哪件“大家的朋友”。人人爱护公物，校园会更美！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第15期</span>
+        <div>
+          <h3>第15课：我们不乱扔 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第四单元·我们讲文明 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-daofa/main/audio/道法/15_道法伴学_一上[第15课]_我们不乱扔.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好，我是小雨。你更喜欢干净的地面，还是满地垃圾的地面？书里说，大家都喜欢干干净净的地方。可有的角落却有果皮、纸屑，看着就不舒服，还不卫生。外出研学时，书里提醒我们：每人带一个垃圾袋，把自己的垃圾装回去。</p>
+<p>保持公共卫生，有很多小细节：咳嗽、打喷嚏要用手捂住口鼻；有痰要吐在纸巾里包好再扔进垃圾桶；在人群多的地方戴好口罩；不随手乱扔花瓣、果皮。书里还让我们给干净的花瓣涂色，提醒自己“美的地方要爱护”。守规则、讲卫生，是个人文明的表现。</p>
+<p>今天的小实践：出门时随身带一个小垃圾袋，把自己的废纸、果皮装好丢进垃圾桶；在家里也做到“垃圾不落地”。明天和小雨分享：今天你有没有让身边更干净一点点？我们不乱扔，世界更美丽！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第16期</span>
+        <div>
+          <h3>第16课：大家排好队 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第四单元·我们讲文明 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-daofa/main/audio/道法/16_道法伴学_一上[第16课]_大家排好队.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好，我是小雨。发礼物的时候，如果大家一拥而上会怎样？书里做了对比：挤来挤去，有人摔倒、有人拿不到，还容易吵架；可要是排好队、一个接一个，每个人都领到礼物，又快又开心。排队，让事情变得公平又有序。</p>
+<p>书里还讲了一个温暖的故事：妈妈带着孩子买东西，看到别人着急，就主动说“您先来”。在银行、车站有“一米线”，提醒大家保持距离；叫号的地方要等自己的号，不插队。假期出门看演出、坐车，也一样要讲文明、守秩序。</p>
+<p>今天的小实践：在学校接水、上厕所、放学路队时，主动排好队、不插队；在家里和爸爸妈妈坐车、买东西时也按规定排队。明天和小雨说说，你今天排队时，有没有像书里那位妈妈一样，礼貌地“让一让”？大家排好队，文明你我他！</p></div></details></div>
+      
+    </article>
+</div>
+<div class="subject-section" data-sub="科学" style="display:none">
+<div class="subject-pdf"><span class="pdf-tag">📚 本册教材</span><a class="pdf-link" href="https://wilson2000go.github.io/Teach-and-Study/G1S1/pdf/G1S1-kexue.pdf" target="_blank" rel="noopener">科学教材（点击查看 / 下载）</a></div>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第01期</span>
+        <div>
+          <h3>“钓鱼”游戏 <span class="tag" style="background:#e8590c">正文</span></h3>
+          <div class="sub">第一单元·走近科学 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-kexue/main/audio/科学/01_科学伴学_一上[正文]_“钓鱼”游戏.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>同学们好！今天我们来玩一个特别好玩的“钓鱼”游戏。老师准备了一根带鱼钩的小鱼竿，还有好多五颜六色的小鱼。奇怪的事情发生了：用鱼竿一钓，有的小鱼“嗖”地被钓了起来，有的小鱼却怎么也钓不起来。这是为什么呢？</p><p>原来呀，秘密藏在小鱼的身体里。我们仔细看一看：能被钓起的小鱼，肚子里藏着一枚小小的曲别针；钓不起来的小鱼，肚子里什么都没有。再看看鱼钩——鱼钩其实是一块小小的磁铁！磁铁有一个神奇的本领，它能把铁做的东西吸住。曲别针是铁做的，所以磁铁鱼钩一靠近，就把带曲别针的小鱼吸上来了。</p><p>这个游戏告诉我们：科学就在我们的游戏里。磁铁能吸铁，这是它很重要的性质。你可以在家里找一找，回形针、铁钉、铁勺子，还有妈妈的发夹，哪些能被磁铁吸住？哪些吸不住？比如木头积木、塑料尺子、橡皮，磁铁就吸不住它们。</p><p>我们还能玩更多有趣的科学小实验：比如“纸托水”，把一张平整的纸盖在装满水的杯口，用手按住纸，把杯子倒过来，纸居然托住了水，水不会洒出来！还有“纸巾运水”，用纸巾搭桥，水会沿着纸巾慢慢爬到另一个杯子里。这些都是科学的魔法，等着你去发现哦！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第02期</span>
+        <div>
+          <h3>不倒翁 <span class="tag" style="background:#e8590c">正文</span></h3>
+          <div class="sub">第一单元·走近科学 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-kexue/main/audio/科学/02_科学伴学_一上[正文]_不倒翁.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>同学们，你们玩过不倒翁吗？不管你怎么推它、晃它，它总是摇一摇又稳稳地站直了，好像在对你说“我就不倒”！今天我们就来认识这位“站不稳”却又“倒不下”的好朋友。</p><p>不倒翁为什么不会倒呢？我们一起来做一个就知道了。准备一个圆圆的蛋壳或者一个小纸杯，再找一张彩纸画上笑脸，还要请一位“重量级嘉宾”——一枚螺母或者一小块橡皮泥。把螺母用胶带固定在蛋壳的最底部，再贴上彩纸笑脸，一个属于自己的不倒翁就做好啦！</p><p>你轻轻推它，会发现它总是底部朝下、晃一晃又站起来。秘密就在那枚螺母上：它让不倒翁的“重心”变得很低很低，而且重量都集中在底部。就像我们蹲下来比站着更稳一样，底部重的东西不容易摔倒。这就是不倒翁不倒的科学道理。</p><p>做好以后，你还可以试着改进：螺母放得越靠底，它越稳；如果放在中间，它可能就容易倒。你还能给它画不同的表情，比一比谁的不倒翁最可爱、最站得稳。动手做一做，你就成了小小的工程师啦！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第03期</span>
+        <div>
+          <h3>怎样学科学 <span class="tag" style="background:#e8590c">正文</span></h3>
+          <div class="sub">第一单元·走近科学 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-kexue/main/audio/科学/03_科学伴学_一上[正文]_怎样学科学.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们，你们想知道科学家是怎么工作的吗？其实，我们每个小朋友都可以像科学家一样学科学！科学家探索世界有一套好办法，我们也可以学着用。</p><p>第一步，要大胆地“提出问题”。比如看到树叶变黄了，就问：树叶为什么会变黄呢？第二步，要“作出猜想”。猜一猜可能的原因，比如是不是天气变冷了？第三步，要“验证猜想”。我们可以用眼睛观察、做小实验、动手制作、用尺子测量，还可以请爸爸妈妈帮我们查资料，看看书上是怎么说的。</p><p>我们学科学有很多好方法：用眼睛仔细观察，用小手做实验，用材料做模型，用工具测量长短轻重，遇到不懂的还可以查书、查电脑。这些方法合在一起，就是科学探究的本领。</p><p>学科学还要养成好习惯：认真观察不马虎，勤于思考多问为什么，把看到的有趣现象及时记下来，学会安静地听别人说，最重要的是——一定要注意安全，不动危险物品，做实验要有大人陪着。记住这四步和好习惯，你就是爱科学的好孩子！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第04期</span>
+        <div>
+          <h3>单元回顾 <span class="tag" style="background:#e8590c">单元回顾</span></h3>
+          <div class="sub">第一单元·走近科学 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-kexue/main/audio/科学/04_科学伴学_一上[单元回顾]_单元回顾.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们，第一单元“走近科学”我们就学完啦！让我们像翻相册一样，回顾一下这个单元都发现了哪些科学秘密。</p><p>我们认识了三位科学好朋友：在“钓鱼”游戏里，我们发现磁铁能吸住铁做的曲别针，原来吸铁就是磁铁的本领；在“不倒翁”里，我们知道了底部放重物、重心低，东西就更稳、不容易倒；在“怎样学科学”里，我们学会了科学探究的四步法——提问题、作猜想、去验证，还有观察、实验、制作、测量等好方法。</p><p>这一单元最重要的发现就是：科学不在远方，它就在我们的游戏里、玩具里、身边的小现象里。只要我们用对方法——仔细观察、大胆猜想、动手验证，就能发现很多有趣的秘密。</p><p>现在考考你：下雨后地面为什么会有小水洼？冰块放进杯子为什么会变小？你能像小科学家一样，先提出问题，再猜一猜原因，最后想办法去验证吗？也请你想一想，这个单元里哪节课最让你开心，你有没有认真观察、做好记录呢？把你的小发现讲给爸爸妈妈听吧！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第05期</span>
+        <div>
+          <h3>我们怎样知道 <span class="tag" style="background:#e8590c">正文</span></h3>
+          <div class="sub">第二单元·我们的感觉器官 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-kexue/main/audio/科学/05_科学伴学_一上[正文]_我们怎样知道.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>同学们，我们的身体里住着几位“侦察兵”，它们帮我们认识这个世界。它们是谁呢？今天我们就请它们出来亮相！</p><p>老师带来一个不透明的神秘袋子，不打开它，你能猜出里面是什么吗？来，我们先把耳朵贴上去“听一听”——里面有沙沙的声音；再“闻一闻”——有一股香香的味道；伸手进去“摸一摸”——它是圆圆的、硬硬的、表面滑滑的。打开袋子一看，原来是一个苹果！我们用耳朵、鼻子、小手，在没看见之前就猜到了。</p><p>这时候我们还可以“看一看”它的颜色和形状，如果确定是安全干净的食物，还能“尝一尝”它的味道。听、闻、摸、看、尝，这就是我们认识东西的五位好帮手：耳朵听声音，鼻子闻气味，手摸软硬冷热，眼睛看颜色和形状，舌头尝味道。</p><p>回家后，你可以让爸爸妈妈给你准备一个神秘袋，放进不同的小东西，闭上眼睛用耳朵、鼻子、小手去猜一猜是什么。你会发现，不靠眼睛，我们也能知道很多事情！这就是我们神奇的感觉器官在帮忙。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第06期</span>
+        <div>
+          <h3>观察水果 <span class="tag" style="background:#e8590c">正文</span></h3>
+          <div class="sub">第二单元·我们的感觉器官 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-kexue/main/audio/科学/06_科学伴学_一上[正文]_观察水果.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>今天我们来当“水果观察员”！桌上摆着苹果和橘子，你打算怎么认识它们呢？别急，我们要用上全套感觉器官，仔细观察。</p><p>先用眼睛“看一看”：苹果红红的、圆圆的、光光的；橘子黄黄的、也是圆的，但皮上有小坑坑。再用手“摸一摸”：苹果皮滑滑的，橘子皮粗粗的、有点软。凑近“闻一闻”：苹果香香的，橘子有一股清新的味道。如果洗干净了，还能“尝一尝”：苹果脆脆甜甜，橘子一瓣一瓣酸酸甜甜。</p><p>观察完，我们来“比一比”：它们有什么相同点？都是圆圆的水果，都能吃，都有皮和果肉。有什么不同点呢？颜色不一样，皮的感觉不一样，味道也不一样。像这样找出相同和不同，就是科学里的“比较”。</p><p>我们还能给水果“分类”：按颜色分、按形状分、按味道分都可以。有时候，眼睛看不清大小，就请“工具”来帮忙——用尺子量一量谁长谁短，比一比谁大谁小。观察加比较加工具，你就是厉害的小小观察家！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第07期</span>
+        <div>
+          <h3>保护感觉器官 <span class="tag" style="background:#e8590c">正文</span></h3>
+          <div class="sub">第二单元·我们的感觉器官 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-kexue/main/audio/科学/07_科学伴学_一上[正文]_保护感觉器官.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>我们的感觉器官这么厉害，可要好好保护它们！今天我们先玩一个“蒙眼游戏”：请一位同学蒙上眼睛，试试走路、找东西。你会发现，看不见的时候，心里有点慌，做事情变得好难。这下我们明白了：眼睛、耳朵、鼻子、小手，每一个都特别重要，少了哪一个都不方便。</p><p>怎么保护眼睛呢？读书写字要坐端正，眼睛和书本保持距离；不能长时间盯手机、看平板；不要对着强烈的太阳光或刺眼的光看；更不能用脏手揉眼睛，以免把细菌带进去。如果眼睛不舒服，要找眼科医生帮忙——眼科医生就是专门保护我们眼睛健康的白衣天使。</p><p>保护耳朵也有办法：不要用小棍子掏耳朵，耳朵自己会清洁；不能把小珠子塞进耳朵；听音乐、上网课不要长时间戴耳机，声音也别开太大。鼻子呢，不要用力擤鼻涕，闻东西要“扇着闻”而不是把鼻子凑太近猛吸；不认识、不安全的东西千万别用手去摸、去尝。</p><p>记住这些小口诀，每天爱护自己的感觉器官，它们就能一直帮我们发现世界的美好。你今天保护眼睛和耳朵了吗？</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第08期</span>
+        <div>
+          <h3>单元回顾 <span class="tag" style="background:#e8590c">单元回顾</span></h3>
+          <div class="sub">第二单元·我们的感觉器官 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-kexue/main/audio/科学/08_科学伴学_一上[单元回顾]_单元回顾.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>第二单元“我们的感觉器官”结束啦！让我们回顾一下，这几位身体里的“小帮手”都教了我们什么。</p><p>我们认识了五大感觉器官和它们的本领：耳朵听声音，眼睛看颜色和形状，鼻子闻气味，舌头尝味道，小手摸软硬冷热。在“我们怎样知道”里，我们用它们猜出了神秘袋里的东西；在“观察水果”里，我们用看、摸、闻、比，找出了苹果和橘子的相同与不同，还学会了分类；在“保护感觉器官”里，我们知道了蒙上眼睛多不方便，学会了保护眼耳鼻口手的好方法。</p><p>现在来学以致用：桌上放几杯没有颜色的液体，你能用闻一闻、看一看（在安全前提下）分辨出哪杯是水、哪杯是醋吗？再拿一个苹果，用五种感官分别说说它的特点。还可以把一堆小物品按“软的、硬的”或“能吃的、不能吃的”来分类。</p><p>最后想一想：这个单元里，你有没有好好保护自己的感觉器官？以后看书、听音乐，记得坐端正、不长时间看屏幕。爱护它们，它们才会一直陪着你探索世界！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第09期</span>
+        <div>
+          <h3>金鱼 <span class="tag" style="background:#e8590c">正文</span></h3>
+          <div class="sub">第三单元·家养动物 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-kexue/main/audio/科学/09_科学伴学_一上[正文]_金鱼.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>今天我们要去“拜访”一位住在水里的朋友——金鱼！它穿着花衣服，在水里游来游去，真漂亮。我们怎么认识它呢？要仔细观察。</p><p>先“画一画”：拿张纸，照着金鱼的模样画下来。你会发现它有圆圆的身体、大大的尾巴，还有像小扇子一样的鱼鳍。再“看一看”它在水里怎么运动：尾巴左右摆，鱼鳍轻轻划，就能向前游、转弯、停下来，像在水里跳舞。</p><p>有个有趣的问题：金鱼能听到声音吗？我们可以轻声在鱼缸边拍拍手，看看它是不是会游开或者加快游动。科学家发现，鱼虽然没有外耳朵，但它们能感觉到水里的震动，所以我们说话、拍手，它们常常能“听”到。</p><p>除了金鱼，水里还有很多鱼朋友：武昌鱼、鲢鱼、鲤鱼……它们的样子不太一样，但都是鱼。观察鱼的时候，我们要“有序观察”：从头到尾、从上到下，一样一样看清楚，才不会漏掉重要的地方。下次去公园或水族馆，你也试着有序观察一种小鱼，画下它的样子吧！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第10期</span>
+        <div>
+          <h3>猫和兔 <span class="tag" style="background:#e8590c">正文</span></h3>
+          <div class="sub">第三单元·家养动物 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-kexue/main/audio/科学/10_科学伴学_一上[正文]_猫和兔.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>今天我们认识两位毛茸茸的好朋友——猫和兔。先来“模仿秀”：学小猫轻轻走路、喵喵叫；再学小兔蹦蹦跳、竖起长耳朵。你发现它们身体有什么不一样了吗？</p><p>“画一画”它们的身体：猫有尖尖的耳朵、长长的尾巴、脚上有软软的肉垫；兔子有长长的耳朵、短短的尾巴、强壮的后腿。再“比一比”相同点：它们都吃食物、都在陆地上行走、身上都长毛、都会生小宝宝养大。不同点呢：猫会爬树、夜里眼睛亮亮的能看清（夜视本领强）；兔子耳朵特别灵，一有动静就跳得飞快，后腿一蹬能蹦很高。</p><p>如果你家里养了小猫或小兔，一定要记住安全：摸完它们要马上用肥皂洗手；可以用手套帮忙；万一不小心被抓伤或咬伤，要告诉大人，赶紧去打疫苗，保护自己不生病。</p><p>动物是我们的好邻居，用温柔的心去观察、去爱护它们，你会发现每个小动物都有了不起的本领。你最喜欢猫还是兔？说说它最特别的本事是什么吧！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第11期</span>
+        <div>
+          <h3>更多的家养动物 <span class="tag" style="background:#e8590c">正文</span></h3>
+          <div class="sub">第三单元·家养动物 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-kexue/main/audio/科学/11_科学伴学_一上[正文]_更多的家养动物.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>除了猫和兔，人类还养了很多动物朋友，它们有个共同的名字叫“家养动物”。今天我们就来开一个“动物小发布会”！</p><p>课前大家搜集了资料：牛力气大，能帮人耕地、还能产奶；鹅在水里游、看家很凶；还有鸡下蛋、羊产毛、狗看门……真是五花八门。仔细观察这些动物，你能发现它们的“共同特征”吗？</p><p>对啦，家养动物都有这几个共同点：它们会慢慢“生长”，从小长大；它们要“吃食物”获得能量；它们能“繁殖后代”，生下小宝宝；它们还会“运动”，用腿走、用翅膀飞、用鳍游。抓住这些共同点，我们就学会了用科学的方法给动物找“大家族”。</p><p>最后，我们来做一本“动物小书”：选几种你喜欢的家养动物，画下它们的样子，写下它们吃什么、有什么本领。把小书放在书架上，你就是动物小专家啦！想一想，你家或邻居家里养了什么动物？它符合这几个共同特征吗？</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第12期</span>
+        <div>
+          <h3>单元回顾 <span class="tag" style="background:#e8590c">单元回顾</span></h3>
+          <div class="sub">第三单元·家养动物 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-kexue/main/audio/科学/12_科学伴学_一上[单元回顾]_单元回顾.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>第三单元“家养动物”学完啦！我们和好多毛茸茸、滑溜溜的动物交了朋友，一起来回顾一下。</p><p>在“金鱼”里，我们画出了金鱼的样子，发现它在水里靠尾巴和鱼鳍运动，还能感觉到声音和震动；在“猫和兔”里，我们比较出它们都吃食物、会长大会繁殖，但猫会爬树夜视，兔耳灵会蹦跳，还学会了和动物相处的安全方法；在“更多的家养动物”里，我们发现牛、鹅、鸡、羊等都有共同特征——会生长、吃食物、繁殖后代、会运动。</p><p>学以致用时间到：说出一条鱼的三个特征（比如生活在水里、用鳍游、用鳃呼吸）；再说说猫和兔的三个相同点（吃食物、陆地走、长毛）。你还记得吗？</p><p>最后反思一下：和动物相处时，你有没有做到摸完洗手、被咬打疫苗？动物是地球大家庭的一员，用爱心和正确的方法对待它们，我们和动物都能快乐地生活。你最想养哪种动物？为什么？</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第13期</span>
+        <div>
+          <h3>常见的工具 <span class="tag" style="background:#e8590c">正文</span></h3>
+          <div class="sub">第四单元·使用工具 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-kexue/main/audio/科学/13_科学伴学_一上[正文]_常见的工具.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>同学们，我们的小手很能干，但有些事光靠手可不行，这时候就要请“工具”来帮忙啦！今天我们来认识身边的好帮手。</p><p>试一试：让你用铅笔在纸上画一个圆和一个方，再让你用圆规画圆、用尺子画方。你会发现，有了圆规和尺子，画出来的图形又圆又直，比手画的好看多了、也快多了。这就是工具的厉害之处——让事情变得更方便、更整齐。</p><p>我们身边有很多常见工具：铅笔、橡皮、剪刀、尺子、锤子、螺丝刀……它们各有各的用处。使用工具一定要“注意安全”：剪刀尖尖的，用的时候不对着人；锤子敲的时候扶稳东西；用完工具要放回原处，不掉在地上绊倒人。</p><p>课后小调查：请你当“工具侦察员”，在家里走一圈，数一数爸爸妈妈都用过哪些工具？厨房里有锅铲、削皮刀，书房里有订书机、胶棒，阳台上有扫把、喷壶……把找到的工具画下来或记下来。你会发现，工具真是让生活变轻松的小魔法师！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第14期</span>
+        <div>
+          <h3>拆装玩具 <span class="tag" style="background:#e8590c">正文</span></h3>
+          <div class="sub">第四单元·使用工具 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-kexue/main/audio/科学/14_科学伴学_一上[正文]_拆装玩具.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>今天我们要当“小修理工”，来拆装一辆玩具小车！别担心弄坏，拆开再装好，你就能明白它是怎么工作的。</p><p>第一步，把小车轻轻拆开，你会看到轮子、车轴、螺丝、外壳等好多零件。关键来了：要把拆下来的零件“按顺序摆好”，可以画一张简单的图，或者拍张照片，记住每个零件原来在哪。第二步，按照相反的顺序把零件装回去，先装里面再装外面，拧好螺丝。</p><p>用工具的时候要“注意安全”：螺丝刀要对准螺丝慢慢拧，别滑手戳到手；小零件不要放进嘴里、鼻子里；如果拧不动，请大人帮忙，别用蛮力。</p><p>学会了拆装，你还能修别的东西呢！比如笤帚的杆松了，用绳子绑紧；小扇子的铆钉掉了，请大人用工具固定。动手动脑，旧东西也能焕然一新。下次你的玩具坏了，先别急着扔，想想能不能自己拆开看看、修一修？</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第15期</span>
+        <div>
+          <h3>制作杯垫 <span class="tag" style="background:#e8590c">正文</span></h3>
+          <div class="sub">第四单元·使用工具 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-kexue/main/audio/科学/15_科学伴学_一上[正文]_制作杯垫.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>今天我们动手做一件实用的小东西——杯垫！夏天杯子外面有水珠，放在桌上会弄湿桌子，杯垫就能帮上忙。</p><p>准备材料：一块软软的厚纸或软木片、一支笔、一把安全圆规（或杯子口当模板）、剪刀、胶水。先“画圆”：用圆规或倒扣的杯子在材料上描一个圆；再“裁剪”：沿着线小心剪下来，一个圆圆的杯垫坯就出来了。你还可以剪几层粘在一起让它更厚，或者在上面画上喜欢的图案。</p><p>做好后，说说它的“优点”：能吸水、能保护桌子、圆圆的好看；“缺点”呢？可能容易脏、纸的怕水。想想怎么改进：换成防水的材料，或者涂一层亮光漆。</p><p>工具还能帮我们解决更多生活小问题：风筝挂到树上够不着，用长杆子加钩子取下来；牙膏挤不出来，用卷纸的棒子从底部往上卷就能挤干净。你会发现，会用手工具和动脑筋，生活里的小麻烦都能变成小发明！你也来设计一个帮家里省力的小工具吧。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第16期</span>
+        <div>
+          <h3>单元回顾 <span class="tag" style="background:#e8590c">单元回顾</span></h3>
+          <div class="sub">第四单元·使用工具 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-kexue/main/audio/科学/16_科学伴学_一上[单元回顾]_单元回顾.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>第四单元“使用工具”结束啦！这单元我们认识了让生活更轻松的好帮手——工具。</p><p>回顾一下：在“常见的工具”里，我们发现圆规、尺子让画图又圆又直，比手画方便多了，还学会了安全使用工具；在“拆装玩具”里，我们按顺序拆开又装好玩具小车，明白了零件的位置，体会到工具帮我们修理东西；在“制作杯垫”里，我们用画圆、裁剪做出实用杯垫，还想到用长杆取风筝、用卷棒挤牙膏等妙招。</p><p>本单元的核心发现就是：工具能“改变生活、让事情更便利”。没有工具，很多事做起来又慢又难；有了合适的工具，又快又好。</p><p>学以致用：家里衣服上粘了毛，你能用工具做个“粘毛器”吗？可以用宽胶带反过来缠在擀面杖或手上，在有毛的衣服上滚一滚，毛就被粘走啦！最后反思一下：这个单元你用工具时有没有注意安全？以后遇到小问题，先想想“有没有合适的工具能帮上忙”，你就是爱动脑的小小发明家！</p></div></details></div>
+      
+    </article>
+</div>
+<div class="subject-section" data-sub="美术" style="display:none">
+<div class="subject-pdf"><span class="pdf-tag">📚 本册教材</span><a class="pdf-link" href="https://wilson2000go.github.io/Teach-and-Study/G1S1/pdf/G1S1-meishu.pdf" target="_blank" rel="noopener">美术教材（点击查看 / 下载）</a></div>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第01期</span>
+        <div>
+          <h3>第1课：我的名字 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第一单元·龙的传人 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-meishu/main/audio/美术/01_美术伴学_一上[第1课]_我的名字.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>同学们好！欢迎来到一年级上册美术的第一课《我的名字》。老师先念一首小儿歌：中国汉字真有趣，我的名字有含义。爷爷奶奶藏祝福，爸爸妈妈传心意。你发现没有，每一个名字里都藏着家人满满的爱。翻开课本第2页，我们先来认一认——我们的祖先最早是根据事物的形象来造字的，这叫象形字。你看，田字方方正正像一块块田地，禾字像弯着腰的庄稼，日字圆圆的是太阳，山字像三座山峰连在一起，月字像弯弯的月牙，木字像一棵小树，鸟字像一只小鸟，自字像眼睛。中国汉字美如画，真是太奇妙啦！</p><p>接下来我们动手画名字。先看一看书上的学生作品《手拉手好朋友》，熊朋凯、石凌菲等同学都把自己的名字变成了图画。你可以先找一找：你的名字里哪些字能用象形字或者小图画来表示？比如名字里有林，就可以画两棵树；有月，就画一个弯月亮。然后作业要求我们用自然界和生活中常见的事物画出自己的名字。课本还给我们一个活动小任务：利用点、线、面和色彩的自由组合，把名字变成美丽的图画。步骤很简单：先用铅笔轻轻写出名字，再把其中的字变成小图案，最后用水彩笔涂上漂亮的颜色，让点、线、面和色彩一起跳舞。</p><p>创意小提示：别怕画得不像，你的想象最珍贵！试试把名字排成弯弯的小路，或者让字宝宝坐在小船上。还可以用不同颜色表现心情——开心用亮黄，安静用浅蓝。做完后讲给爸爸妈妈听，说说每个图案代表名字里的什么含义，你一定会对自己的名字越来越喜欢！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第02期</span>
+        <div>
+          <h3>第2课：生肖大家庭 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第一单元·龙的传人 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-meishu/main/audio/美术/02_美术伴学_一上[第2课]_生肖大家庭.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！今天我们一起走进《生肖大家庭》。课本第4页有一首儿歌：十二生肖本领大，亲如一家乐哈哈。性格不同有特点，吉祥如意大中华。十二生肖是我们中国人特有的好朋友，翻开书你会看到一张山东高密的十二生肖剪纸，先找一找——你的生肖小动物藏在哪儿呢？书里的小动物还会自我介绍哦：我是早起鸡！能打鸣，会吃虫，有正义感，雄鸡一声天下白！我是勇敢虎！力气大，本领强，虎虎生风，不怒自威！读一读，是不是特别神气？我们也可以学着这样介绍自己的生肖。</p><p>现在动手画生肖。活动一请和同学分享关于生肖的故事；活动二要尝试画一画自己的生肖。看看书上的《大公鸡》年画和韩美林画的《虎》，想一想：画家是怎么抓住小动物特点的？有的生肖长耳朵，有的大尾巴，有的尖嘴巴。书里还展示了《三鼠图册》《五牛图》《虎图》《狗图》等名家中国画，告诉我们每种动物都有自己的本领。接着认一认几种常见色——红、黄、蓝、绿，说说它们和大自然的关系：红色像苹果和太阳，绿色像树叶和草地。最后作业是用几种常见色创作一幅家人生肖图，你可以像书上《我的家庭关系图》那样，把爷爷、奶奶、爸爸、妈妈和你的生肖都画出来，组成温馨之家、相亲相爱一家人。</p><p>创意小提示：画生肖不一定要画得和真的一模一样，把特点画出来就好。可以给小动物穿上花衣服、戴上蝴蝶结，让一家人排排队。做完后讲一讲：你家有几口人，每个人的生肖是什么，为什么你们是相亲相爱一家人？</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第03期</span>
+        <div>
+          <h3>第3课：龙的故事 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第一单元·龙的传人 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-meishu/main/audio/美术/03_美术伴学_一上[第3课]_龙的故事.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>同学们好！这一课我们来讲《龙的故事》。书上的儿歌说：巨龙历史悠长，巨龙承载希望。我要成为巨龙，争做民族脊梁。龙是我们中华民族的象征，我们每一个人都是龙的传人。翻开第8页，先来找一找不同形态的龙——你看，新石器时代的玉龙像一条弯弯的钩子，玉猪龙圆滚滚像小猪和龙的结合，透雕夔龙黄玉佩是战国时期精美的玉器，青铜龙柱形器来自商代三星堆，造型神秘又威武。看一看：不同时代的龙，样子真不一样，越变越神气！</p><p>书里还告诉我们，几千年前华夏祖先就用蛤壳在地上堆出龙的形象，今天人们做的龙形风筝在蓝天白云间飞翔。龙的身体集中了好多动物的特点——鹿的角、蛇的身、鹰的爪、鱼的鳞，这是在漫长岁月里一点点变出来的。再看九龙壁，墙上九条大龙身上有不断重复的图形，找一找，是不是一片片鳞片、一道道云彩在重复？还有青花穿莲龙纹天球瓶和龙皮影，都特别漂亮。最后书上问：赛龙舟、舞龙、龙灯会，这些和龙有关的节日习俗你见过吗？作业是说一说你喜欢的龙有什么特点——它昂着头、张着嘴、还是腾云驾雾？</p><p>创意小提示：你可以回家和爸爸妈妈一起找一找，生活中哪里有龙？电视里、毛衣上、桥栏杆上都可能藏着龙。试着用手指在空中画一条龙，或者讲一个你心中的龙故事：它住在哪里、喜欢做什么。记住，龙代表着勇敢和希望，你也可以是了不起的小龙人！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第04期</span>
+        <div>
+          <h3>第4课：灵动的龙 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第一单元·龙的传人 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-meishu/main/audio/美术/04_美术伴学_一上[第4课]_灵动的龙.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！今天学《灵动的龙》。儿歌这样唱：万里长城一条龙，群山之上显威风，长江黄河双龙汇，生生不息中国梦。你看书上的鎏金铁芯铜龙，是唐代的宝贝，弯弯的身子像要飞起来。再看一看：龙这个字从甲骨文一路变到今天的写法，你能在字形里找到龙的影子吗？弯弯的笔画多像龙身和龙尾呀！</p><p>动手之前先试一试：用毛笔，或者干脆用手在空中比划，摹写一个龙字，感受书法那一上一下的韵律，就像龙在扭动身体。书里还有一个神奇的小实验——把墨水滴进水里，墨会慢慢散开，像龙一样的墨迹若隐若现，特别美！试一试，用灵活的曲线画一条腾飞的龙：龙的身体不是直直的，而是一圈一圈、弯弯曲曲的曲线，像波浪，像云朵。看看伍必端的版画《万里长城》，远远看去，长城不就是一条趴在群山上的巨龙吗？学生作品《长龙》《飞龙在天》《龙的传人》也用了很多流畅的线条。还有找一找：大自然里什么形状和龙相似？弯弯的河流、卷卷的藤蔓都可以变成龙。作业是用水彩笔、彩墨等不同材料，画一条形态各异的龙。</p><p>创意小提示：画龙时让线条动起来——先画一个大大的人字头当龙头，再用连续的曲线画龙身，最后加上爪子和尾巴。可以用两种材料：水彩笔画身体，彩墨点鳞片。别忘了给你的龙画上表情，是温柔的还是神气的？画完讲讲它要去哪里冒险！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第05期</span>
+        <div>
+          <h3>第5课：中秋月儿圆 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第一单元·龙的传人 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-meishu/main/audio/美术/05_美术伴学_一上[第5课]_中秋月儿圆.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>同学们好！中秋佳节到，我们学《中秋月儿圆》。儿歌念起来：月儿明，月儿圆，玉兔嫦娥住里边。中秋节，月饼甜，遥望月儿把家念。你看书上的兔儿爷泥塑，胖乎乎的兔子穿着铠甲，多可爱！还有任伯年画的中秋景物、冷枚的梧桐双兔图、汉代的嫦娥奔月图画像砖拓片，都在讲月亮和团圆的故事。活动一请了解中秋节的来历和习俗：中秋节是全家团聚的日子，我们吃月饼、赏月亮、听嫦娥奔月的故事。说一说：在这些中国画里，你发现了什么？对啦，总有圆圆的月亮和可爱的兔子。</p><p>最开心的是活动二和作业：用彩泥做一件和中秋有关的物品！书里教了三个基本手法——揉团：把彩泥放在手心团成圆球；压扁：用手掌或工具把泥球压成小饼；搓条：把泥条在桌上搓成细长条。用这三招，你可以做月兔（团个圆身体，搓俩长耳朵）、月满中秋（压个圆饼当月亮）和赏月（捏个小人抬头看天）。学生作品里的小伙伴就是这么做的，你也一定行！</p><p>创意小提示：彩泥颜色可以混着用——白色做玉兔，黄色做月亮，绿色做小草地。试试给月饼按上花纹：用牙签在泥饼上压出格子。做完摆成一桌中秋宴，讲给家人听：今年中秋，你最想和谁一起赏月？把祝福揉进彩泥里，团团圆圆最幸福！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第06期</span>
+        <div>
+          <h3>第6课：落叶去哪儿了 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第二单元·奉献最美 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-meishu/main/audio/美术/06_美术伴学_一上[第6课]_落叶去哪儿了.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！秋天来了，我们学《落叶去哪儿了》。儿歌说：落叶不是无情物，化作泥土护春芽。一片一片拾起来，开动脑筋留住它。原来落叶掉到地上，会慢慢变成泥土，养育明年的新芽，它是在默默地奉献呢！翻开书，看一看：秋天的落叶有哪些颜色和形状？有红红的枫叶、黄黄的银杏、长长的柳叶，形状像手掌、像扇子、像小船。拓印准备材料告诉我们，需要树叶、颜料、白纸和一把小刷子。</p><p>动手做两件事。活动一是树叶拓印：选一片漂亮的叶子，用刷子把颜料涂在叶子背面（凸起的叶脉那面），然后轻轻盖在白纸上，用手掌压一压，再慢慢揭开——哇，叶脉的纹路清清楚楚印下来啦！书上说，美丽的印痕能带来无限联想，可以添画，也可以重复拓印成画：你可以给印好的叶子添上叶柄、画成小金鱼，或者把不同叶子重复印满整张纸，变成一片小森林。活动二用拓印或压印表现秋天：把树枝、花瓣压在彩泥上，再揭开，印痕也是一幅画。记得捏、揉、搓、压是玩彩泥的好朋友。作业是尝试用更多方法和材料表现秋天。</p><p>创意小提示：出门捡叶子时挑形状不一样的，回家排排队比一比。拓印可以玩套色——同一片叶子先印红再印黄，叠出梦幻色。还可以把几片叶子拼成一只大蝴蝶再拓印。做完说说：你眼里的秋天是什么颜色的？把捡来的秋天永远留在画里吧！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第07期</span>
+        <div>
+          <h3>第7课：勤劳的蚕宝宝 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第二单元·奉献最美 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-meishu/main/audio/美术/07_美术伴学_一上[第7课]_勤劳的蚕宝宝.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>同学们好！这一课《勤劳的蚕宝宝》讲一位了不起的小奉献家。儿歌说：有种虫儿真奇怪，专吃桑叶结茧快，吐出丝来纺成线，为了他人好穿戴。蚕宝宝吃的是桑叶，吐出的丝却做成温暖的丝绸衣服给别人穿，它多无私！活动一请听《蚕姑娘》儿歌，再说一说蚕的一生：从小小的卵，变成会爬的蚕，吐丝结茧变成蚕蛹，最后破茧飞出蚕蛾。书上有《亲蚕图》、传统刺绣和古代缂丝，告诉我们蚕丝有多珍贵。想一想：春蚕象征什么精神？对，是默默奉献、为他人着想。</p><p>现在动手做蚕宝宝。书里试一试用撕纸的方法：拿一张白纸，慢慢撕出蚕的轮廓，注意安全使用剪刀。还可以玩一玩会动的蚕宝宝——为什么有的动不了？因为要把泥球团成泥球连起来，一节一节连成身体才能弯、才能动，这就是我的形体很饱满、我是彩色蚕宝宝的秘诀！活动二要小组合作，表现蚕宝宝们辛勤劳动的场景。作业是用撕纸、彩泥捏塑、添画等多种方法表现蚕宝宝和树叶。记得拼一拼，摆一摆，要有疏密变化才好看：有的地方蚕多、密密的，有的地方空一点，画面才舒服。</p><p>创意小提示：撕纸蚕可以贴在绿色桑叶上；彩泥蚕用白色身体加黑眼睛，再用短线做脚。试着让蚕排成S形在爬，或者几只蚕一起抬头吃叶子。做完讲讲：蚕宝宝教会了你什么？是不是自己的事做好了，也能帮到别人？</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第08期</span>
+        <div>
+          <h3>第8课：寸草心 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第二单元·奉献最美 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-meishu/main/audio/美术/08_美术伴学_一上[第8课]_寸草心.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们好！教师节快到了，我们做《寸草心》。古诗说寸草心，三春晖，小小的草也能报答春天阳光，我们也要感谢老师。想一想：为什么把老师比作园丁？因为老师像园丁照顾花草一样，天天照顾我们长大。我们可以用哪些方式向老师表达心意呢？做一张心意卡就特别好！活动一学习用剪纸表现喜欢的形状：把纸对折，剪出心形，打开就是对称的双心——对折剪可以得到不同的对称图形，有正形也有负形，两种都好看。大大小小、重重复复地剪，创意就出来啦！书里还教折纸可以得到立体造型，找找折纸顺序试试看。</p><p>最暖心的是活动二和作业：用折、剪的方式制作心意卡，向老师表达祝福。折一折，变一变，你可以做书上的范例——向日葵心意卡（像小太阳）、小鸟心意卡、康乃馨心意卡、小花心意卡。步骤：先折一张硬卡纸当卡片，再剪出花朵或小鸟贴上去，写上老师辛苦了。还可以探究更多方法，比如把纸卷成小筒当立体花心。</p><p>创意小提示：卡片颜色选老师喜欢的暖色，粉红、橘黄都显心意。在卡片里画上你和老师的合影小图，或者写一句悄悄话。做完亲手送给老师，说声谢谢您——这比任何礼物都珍贵，因为里面装着你的寸草心！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第09期</span>
+        <div>
+          <h3>第9课：新龟兔赛跑 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第三单元·成长足迹 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-meishu/main/audio/美术/09_美术伴学_一上[第9课]_新龟兔赛跑.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>同学们好！老故事新编啦，今天我们学《新龟兔赛跑》。儿歌说：兔子太骄傲，乌龟有动力。比谁有恒心，最终拿第一。乌龟虽然爬得慢，但它说虽然爬得慢，但我有恒心，这就是毅力！书上的漫画《龟兔赛跑》里，兔子骄傲睡觉，乌龟一步步坚持，旁边还写着友谊第一、乌龟有新科技——新比赛里乌龟用上了新办法。看一看龟兔的外形：乌龟有硬硬的壳、短短的腿；兔子有长耳朵、长后腿，跑得飞快。想一想：它们各有所长，怎么扬长避短赢比赛呢？</p><p>动手玩两个活动。活动一用树叶拼摆乌龟和兔子：捡不同形状的叶子，圆叶子当乌龟壳，长叶子当兔子耳朵和腿，在纸上拼出它们的样子，细心观察运动过程，发现动态规律。活动二最酷——制作《龟兔赛跑》手翻书小动画！在好几张小纸的相同位置，画上乌龟和兔子一点点往前跑的动作，快速翻动，它们就像动起来在比赛了。书里揭秘：人的眼睛有视觉暂留的特性，所以翻得快就看成动画。还可以边翻动，边配音，和小伙伴演一演。作业是用剪、捏、拼摆等方法，综合表现龟兔赛跑的故事，甚至设计龟兔赛跑的学习用品。</p><p>创意小提示：手翻书每页只让脚移动一点点，翻起来才连贯。给兔子画个红脸蛋表示害羞，给乌龟画个奖牌。你也能编新结局：这回兔子不睡了，俩人手拉手一起冲线——友谊第一！做完讲给家人，说说恒心是什么。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第10期</span>
+        <div>
+          <h3>第10课：蜗牛的坚持 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第三单元·成长足迹 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-meishu/main/audio/美术/10_美术伴学_一上[第10课]_蜗牛的坚持.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>同学们好！《蜗牛的坚持》告诉我们坚持的力量。儿歌唱：我有一个小小家，风吹雨打都不怕。一步一步向前进，我的梦想在天涯。蜗牛背着小房子，慢慢爬也不放弃，多像有毅力的我们！活动一先看一看蜗牛的外形特点：软软的身体、长长的触角、背上圆圆的壳。想一想：你知道哪些蜗牛克服困难的故事？它爬得慢，却从不回头。找一找生活中的螺旋纹——植物的卷须、水面的波纹、螺旋楼梯、海里鹦鹉螺的壳，都是一圈圈转着的，蜗牛的壳也是螺旋纹哦！</p><p>动手画和做。活动二画一画生活中的螺旋纹：从中间一点出发，用笔转圈圈画出路、海浪，也可以撕一撕、画一画。试一试还有什么方法表现蜗牛？书里教彩泥蜗牛：把彩泥搓长条，卷曲线，一圈圈卷成壳，再捏个身体，就是观察蜗牛。活动三小组合作，分工做一群小蜗牛努力前行的情景。作业是用彩泥捏塑、废纸搓揉等方法制作小蜗牛——彩纸卷一卷、彩泥捏一捏、废纸揉一揉都行。揉纸蜗牛有1到4步示意图：先把废纸揉成团，再包上彩纸，慢慢卷出壳和身体。</p><p>创意小提示：让小蜗牛去探险——把它放在绿色草地上，或用彩纸做座小山坡，蜗牛正往上爬。给每只蜗牛画不同表情：有的笑、有的喘气但还在爬。做完排成一队讲个故事：今天，小蜗牛们一步一步，爬到了梦想的地方。坚持，你也能到！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第11期</span>
+        <div>
+          <h3>第11课：看我七十二变 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第三单元·成长足迹 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-meishu/main/audio/美术/11_美术伴学_一上[第11课]_看我七十二变.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>同学们好！这一课最好玩——《看我七十二变》！儿歌说：形状变身，奇妙无限。脑洞大开，快来发现。一个普通的形状，变一变就能成好多东西。活动一请寻找身边有趣的书签。书上有孙悟空书签，你猜它原来是什么形？是心形变的那！看一看：用心形当脸，加上金箍棒、帽子和表情，就变成神通广大的孙悟空啦。试一试：心形还能变什么？变小猫（加耳朵）、变苹果（加柄）、变小鱼（加尾巴），全靠你的脑洞！书里还放了动画《大闹天宫》，孙悟空七十二变最厉害。</p><p>活动二动手做书签：一起来制作外形简洁且具有实用价值的书签。书上有各种各样的书签给你参考。作业是用折、剪、贴的方法变出更多书签，送给同学和老师。步骤很简单：先剪一个喜欢的形状（心形、星形、动物形都行），用彩笔装饰，穿上小绳当书签，或者折一折、贴一贴做出立体的。书签要不大不小，能夹在书里不掉落，又好认。</p><p>创意小提示：做书签时先想它要夹在哪本书里——夹故事书就做孙悟空，夹古诗书就做小月亮。背面写句鼓励的话送给朋友，比如你最棒。形状变身游戏在家也能玩：用纸片折出三角形，看看像不像小树、小山、小帆？七十二变，变出你的奇思妙想！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第12期</span>
+        <div>
+          <h3>第12课：红星闪闪 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第四单元·我的祖国 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-meishu/main/audio/美术/12_美术伴学_一上[第12课]_红星闪闪.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>同学们好！第四单元《我的祖国》开始啦，先学《红星闪闪》。歌词唱：红星闪闪放光彩，红星灿灿暖胸怀。有我中华好少年，革命精神代代传。红色五角星象征着正义和光明，是革命先辈的标记。活动一听唱《红星闪闪》，了解革命年代的故事。书上的油画《太阳很足的晌午》《贫农的儿子》和中国画《说红书》，画了勇敢的小红军。说一说：看到画面里的小红军，你想到了什么？他们年纪不大，却很坚强，为了大家过上好日子不怕困难。</p><p>动手做闪亮红星。看一看：立体五角星是怎么折剪出来的？书里有五角星折剪示意图。活动二用对折剪纸的方法制作五角星：把红纸对折，在折边画半个五角星，剪下来打开，一颗立体的红星星就亮起来啦！它就像小灯笼，能照亮我们的校园生活。作业是尝试用更多工具和材料表现五角星，并和同学集体展示——把大家的红星贴在一张大纸上，变成一面星光墙。</p><p>创意小提示：剪五角星时先画准五个尖角，角要尖尖的才精神。除了红色，也可以用金纸做发光的星，贴在深蓝纸上像夜空。做完举起来，对着光看一看——你是闪闪发光的好少年！和同学把红星拼成一颗大心，送给祖国妈妈。</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第13期</span>
+        <div>
+          <h3>第13课：时光记忆 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第四单元·我的祖国 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-meishu/main/audio/美术/13_美术伴学_一上[第13课]_时光记忆.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>同学们好！《时光记忆》让我们记住了不起的英雄。歌词：烽烟滚滚唱英雄，四面青山侧耳听。如今大地春常在，山花烂漫颂英雄。书里有李大钊、方志敏等先烈的像。活动一请收集英雄事迹，说一说感受。书提问：生命多可贵，为什么英雄不惜牺牲自己？因为他们想让更多人过上好日子。看一看油画《回望》《邱少云》和雕塑《雷锋》《还记得我们吗》，作者用表情、动态、环境、色彩表现主题：邱少云趴在火里一动不动，环境让人心疼，色彩庄重。艺术家用这些方式表达怀念。</p><p>动手做勋章纪念英雄。书里介绍两种真勋章：七一勋章上有向日葵、大山大河；共和国勋章的章链是中国结、如意、兰花，章体有国徽、五角星、黄河、长江、山峰、牡丹，每一个图案都有美好含义。活动三先画一画、再做一做勋章——学生作品有陪伴奖章、劳动小能手奖章。活动四开动脑筋用不同方法制作，想一想如何使单独图形连起来：用组合形、重复折、剪花边、做章链，把零散的图形连成一枚完整的勋章。作业是用折、剪、贴等方法制作勋章。</p><p>创意小提示：做劳动小能手奖章送给身边爱劳动的家人，做勇敢奖章给自己。章链用纸条折成中国结的样子，章体画上你喜欢的图案。做完戴上，敬个礼——英雄的精神，我们记在心里，也做力所能及的好事！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第14期</span>
+        <div>
+          <h3>第14课：山河新貌 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第四单元·我的祖国 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-meishu/main/audio/美术/14_美术伴学_一上[第14课]_山河新貌.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>同学们好！《山河新貌》讲劳动创造的新中国。儿歌：汗水洒大地，劳动创奇迹。中国共产党，一心为百姓。书里活动一请欣赏作品并分享感受：《愚公移山》雕塑讲不怕困难移走大山；《红旗渠》《移山填谷》中国画展现人们开山引水；《水电站》《风力发电》《高速列车》说明科技让山河变新样；油画《焦裕禄》纪念为民的好干部。看一看：这些画里都有在劳动的人，他们用双手改变家乡。</p><p>动手画新貌。活动二用拓印、添画的方法表现山河新貌。书里示范蘸、按、抹三个动作：用海绵或纸团蘸颜料，按在纸上留下粗糙的纹理、不规则的形状，再抹出山和水的感觉。先拓印出大块的面，再添加色彩让画面丰富——你能辨别这些颜色吗？红的是朝霞，绿的是梯田，蓝的是大河。学生作品《高铁进山啦》就是先拓印底色，再添画高铁和山。作业是用拓印添画表现家乡的新变化。</p><p>创意小提示：拓印时换几种工具——积木、瓶盖、皱纹纸都能按出不同花纹。先拓出山的棕色块，再添画弯弯的公路和白色高铁，就是山河新貌。还可以画上小小的劳动者。做完讲讲：你家乡最近有什么新变化？劳动，让祖国越来越美！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第15期</span>
+        <div>
+          <h3>第15课：星辰大海 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第四单元·我的祖国 ｜ 一年级上册</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-meishu/main/audio/美术/15_美术伴学_一上[第15课]_星辰大海.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>同学们好！全册最后一课《星辰大海》，我们一起飞向天空和太空！儿歌：那无垠的深蓝，是大海，是星空。站在梦想的甲板，我们勇敢起飞。书提问：除了折，还能用哪些方法做纸飞机？粘、剪、画都可以。活动一学折纸飞机：跟着折纸飞机步骤图，把纸对折、折出机翼，一架小飞机就成形了。说一说：人类为什么要探索宇宙？因为星空充满未知，我们好奇、想飞得更远。看，中国天宫空间站已经在天上，那是我们自己的太空家园！</p><p>活动二做弹射小火箭：书里有小火箭制作步骤图和准备材料清单。分四步——1.做整流罩（火箭尖尖的头），2.做尾翼（帮助平衡的小翅膀），3.做主体（长长的箭身），4.完成组装。装好后试着做一个弹射小火箭，看看如何让火箭飞得更高：尾翼要对称、身体要轻，弹出去才稳。作业是运用本单元学到的剪纸、添画等方法，制作并装饰一个飞行器——可以是飞船、火箭，也可以是你想象的未来飞机。</p><p>创意小提示：纸飞机画上彩色条纹更好认；火箭用卷纸筒做主体，卡纸做尾翼，最轻便。试试给飞行器起个名字梦想号，在机翼写探索星辰大海。做完到操场放飞，许个愿：长大去天宫做客！这一课也为我们的美术之旅画上闪亮句号——勇敢起飞吧！</p></div></details></div>
+      
+    </article>
+</div>
+<div class="subject-section" data-sub="体育" style="display:none">
+<div class="subject-pdf"><span class="pdf-tag">📚 本册教材</span><a class="pdf-link" href="https://wilson2000go.github.io/Teach-and-Study/G1S1/pdf/G1-tiyu.pdf" target="_blank" rel="noopener">体育教材（点击查看 / 下载）</a></div>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第01期</span>
+        <div>
+          <h3>我们爱运动 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第一单元·体育文化与体育精神 ｜ 一年级</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-tiyu/main/audio/体育/01_体育伴学_一上[课文]_我们爱运动.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>同学们好！我是小雨。今天我们要一起聊聊“我们爱运动”。上学以后呀，我们在学校里会参加好多好多运动。你最喜欢什么运动呢？是拍皮球、跑步，还是和小朋友一起玩编花篮、扔纸飞机、踢毽子、跳绳、踢足球？每一种运动都能让我们体验到不一样的快乐，还能把身体锻炼得棒棒的！</p><p>那怎么才能上好体育课呢？小雨告诉大家几个小秘诀：第一，要穿上舒服的运动鞋和运动服，还要先做好准备活动，把身体活动开；第二，要认认真真地跟着老师做广播体操；第三，一定要听老师的话，听从指挥；运动结束后，还要做好放松活动，让身体慢慢平静下来。做到这几点，运动才会又安全又开心。</p><p>书里还问我们：为什么要参加运动呀？大家可以在“有乐趣、身体棒、睡得香、交朋友”这几个好处里，给自己喜欢的打个小勾勾。放学以后、周末和节假日，也要和爸爸妈妈、小伙伴一起到户外去运动哦！今天回家，就和小雨一起，找一项你最喜欢的运动玩起来吧！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第02期</span>
+        <div>
+          <h3>游戏比赛守规则 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第一单元·体育文化与体育精神 ｜ 一年级</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-tiyu/main/audio/体育/02_体育伴学_一上[课文]_游戏比赛守规则.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小朋友们，你们知道什么是“规则”吗？小雨来告诉你：规则就是告诉大家“能做什么、不能做什么”。比如跑步比赛的时候，不能抢跑，要等哨声响了再跑；玩捉迷藏的时候，不能偷偷睁开眼睛看；攀爬架要一个一个来，排好队、有秩序。这些规则呀，都是在保护我们。</p><p>守规则有什么好处呢？第一，能防止受伤，保护自己和别人；第二，能让比赛公平，大家都开心；第三，大家按规则来，游戏才会有秩序、不乱套。如果不守规则会怎样呢？可能会摔倒受伤，会吵架闹别扭，甚至发生危险。所以不管玩游戏还是比赛，我们都要遵守规则，还要提醒小伙伴一起遵守。</p><p>其实规则不只在学校里，生活中到处都有：课堂上要安静听讲，马路上要看红绿灯走斑马线，博物馆里不能大声喊叫，餐厅里要排队等候。今天我们玩个“找规则”小游戏：和爸爸妈妈说说，你今天发现的生活规则有哪些？看谁找得最多！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第03期</span>
+        <div>
+          <h3>好好吃饭 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第二单元·健康行为与生活方式 ｜ 一年级</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-tiyu/main/audio/体育/03_体育伴学_一上[课文]_好好吃饭.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>嗨，我是小雨！今天我们来学“好好吃饭”。我们的身体像小房子，需要各种各样的“材料”才能长高长壮。食物分五大类哦：第一类是谷薯类，像米饭、面条、土豆，是主食；第二类是鱼、禽、肉、蛋、奶，能让我们长力气；第三类是蔬菜和水果，让我们少生病；第四类是大豆和坚果；第五类是油和盐，要少吃一点。</p><p>怎么吃才健康呢？每天要喝一杯牛奶，鱼、肉、蛋换着花样吃，水果蔬菜天天有，每顿饭都要吃主食。还要养成好习惯：按时吃三餐，饭菜要干净卫生，少去外面吃，不挑食、不暴饮暴食。吃饭时也有礼貌哦：帮大人摆碗筷，用公勺公筷，不浪费粮食，不在饭桌上挑挑拣拣、打打闹闹。</p><p>今天回家，小雨请你当一次“小小营养师”：看看家里的饭菜，有没有这五大类食物？和妈妈一起，给自己配一顿有菜、有肉、有饭、有水果的“健康餐”吧！记得要把碗里的饭菜都吃光光，不浪费哟！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第04期</span>
+        <div>
+          <h3>充足睡眠 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第二单元·健康行为与生活方式 ｜ 一年级</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-tiyu/main/audio/体育/04_体育伴学_一上[课文]_充足睡眠.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>同学们，你们昨晚睡饱了吗？小雨告诉大家，小学生每天要睡够10个小时呢！睡觉可重要啦：它能让我们的身体休息好，帮助我们长高高，还能让我们第二天上课专心听讲、记东西更牢。如果睡不够，就会觉得特别累，没精神，还容易生病。</p><p>可是有些事情会影响睡觉，比如睡前还在玩闹、吃东西、看屏幕，这些都会让我们睡不着。那怎么做才能睡好呢？第一，每天按时睡觉、按时起床；第二，白天多去户外跑跑跳跳；第三，三餐要定时定量，晚饭别吃太撑；第四，睡前不要吃得太饱。我们还可以和爸爸妈妈一起，画一张“我的睡眠计划表”，贴在床头，每天打卡。</p><p>今晚，小雨就要和你们比赛啦：看谁先上床、睡得香！睡觉前，可以把今天最开心的一件事，轻轻告诉爸爸妈妈，然后闭上眼睛，做一个甜甜的美梦。明天醒来，又是精神满满的一天！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第05期</span>
+        <div>
+          <h3>爱清洁，讲卫生 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第二单元·健康行为与生活方式 ｜ 一年级</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-tiyu/main/audio/体育/05_体育伴学_一上[课文]_爱清洁，讲卫生.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>大家好，我是小雨！今天我们来聊聊“爱清洁，讲卫生”。为什么要讲卫生呢？因为讲卫生会让我们干干净净、漂漂亮亮，少生病，还能让身边的环境更美。个人卫生要记住：勤洗手、勤洗澡、勤换衣服，定期剪指甲，早晚都要刷牙。书里还教了我们洗手的步骤图，要把手心、手背、指缝、指尖都洗干净哦！</p><p>那什么时候必须洗手呢？饭前要洗，上完厕所要洗，摸了脏东西以后也要洗。公共卫生也很重要：打喷嚏或咳嗽时，要用手肘或纸巾遮住口鼻；有痰要吐在纸里扔进垃圾桶；上完厕所要冲干净；垃圾要分类放好。这些都是讲卫生的小卫士行为。</p><p>书里有个好玩的“讲卫生大变样”连图游戏，小雨也请你玩一个：找一找，图里哪个小朋友脏脏的、哪个干干净净？回家后，你也给自己画一张“讲卫生打卡表”吧——今天洗手了吗？刷牙了吗？洗澡换衣了吗？每做到一项就贴一朵小红花！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第06期</span>
+        <div>
+          <h3>坐立行我最美 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第二单元·健康行为与生活方式 ｜ 一年级</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-tiyu/main/audio/体育/06_体育伴学_一上[课文]_坐立行我最美.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>同学们，你们想不想像小松树一样挺拔？小雨告诉你，正确的姿态会让我们又精神又自信！坐的时候要“坐得正”：头摆正、身子挺直、小脚平平放地上；站的时候要“站得直”：抬头挺胸，像小树苗往上长；走路要“行得稳”：脚步轻快，不摇摇晃晃。书里还让我们辨一辨，哪些小朋友做得对、哪些不对呢？</p><p>背书包也有小窍门哦：要用双肩背包，不要只用一边肩膀，而且书包不能太重，不然会把小肩膀压歪。平时多做运动，像伸展手臂、体转运动，也能让我们的姿态更优美、身体更灵活。坐姿站姿走姿好，不仅好看，还能保护我们的骨骼呢。</p><p>今天我们来玩“姿态小超人”游戏：小雨喊“坐——”，大家就坐得端端正正；喊“站——”，就站得像小松树；喊“走——”，就稳稳地走几步。回家也教爸爸妈妈一起做，看谁是最美的“姿态小超人”！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第07期</span>
+        <div>
+          <h3>认识身体 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第三单元·生长发育与心理健康 ｜ 一年级</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-tiyu/main/audio/体育/07_体育伴学_一上[课文]_认识身体.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>嗨，我是小雨！今天我们来“认识身体”。我们的身体有好多部位：头、脖子、肩膀、胸、肚子、背、腰、胳膊、手、屁股、腿、脚。脸上还有眼睛、耳朵、鼻子、嘴巴、舌头，它们各有本领：眼睛看世界，耳朵听声音，鼻子闻味道，嘴巴说话吃饭，舌头尝滋味。</p><p>身体里面还住着“小器官”呢：大脑像总指挥，控制我们的一举一动，还管我们的情绪、思考和看东西；肺就像小风箱，一呼一吸帮我们换气；心脏像个小水泵，咚咚跳着把血液送到全身。我们要爱护身体，不能随便抠鼻子、揉眼睛，那样会把手上的细菌带进去生病。</p><p>今天回家玩个“我说你指”的游戏吧：小雨说“摸摸头”，你就摸摸头；说“指指膝盖”，就指膝盖。还可以照着镜子，和爸爸妈妈说说：眼睛能干什么？耳朵能干什么？把我们身体的每个小本领都记在心里，做自己身体的好主人！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第08期</span>
+        <div>
+          <h3>认识情绪 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第三单元·生长发育与心理健康 ｜ 一年级</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-tiyu/main/audio/体育/08_体育伴学_一上[课文]_认识情绪.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>同学们，你们今天心情怎么样？小雨带你认识“情绪”。我们的心里住着好多小情绪：快乐、伤心、害怕、生气、惊奇、害羞……有时候考了好成绩会开心，摔倒了会疼得想哭，遇到陌生人大声说话会害怕，被误会了会生气。能认出自己的情绪，是很厉害的本领哦！</p><p>开心的时候好处可多啦：吃得好、睡得香，还能交到更多好朋友。那怎么做个快乐的小学生呢？心里有话要说出来，多去户外跑跑跳跳，培养自己的小爱好，还要作息有规律。如果你不开心了，可以告诉爸爸妈妈或老师你的感受和需求，比如“我害怕”“我想要抱抱”，说出来心里就会舒服很多。</p><p>今天我们来玩“情绪变变变”：对着镜子，做出“开心”“生气”“害怕”三种表情，看看镜子里的自己像什么小动物？回家后，也可以画一张“我的情绪小脸谱”，把今天的心情画出来，贴在冰箱上，让全家人都懂你的小心思！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第09期</span>
+        <div>
+          <h3>安全运动和游戏 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第四单元·疾病预防与安全应急 ｜ 一年级</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-tiyu/main/audio/体育/09_体育伴学_一上[课文]_安全运动和游戏.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>小心！前面有石头。这里怎么有水？——小雨提醒大家，运动和游戏时，安全最重要！首先，要选安全的场地：去体育场或者小区里平整的广场玩最安心。马路上、铁道边，深井旁、井盖边，还有建筑工地、工厂这些地方，都太危险啦，千万不能去！想想看，你平时在哪里玩？那里安全吗？</p><p>运动前还要做“安全检查”：穿上运动服和运动鞋，戴好护具，再仔细检查场地和器材。如果看到滑梯开裂、皮球鼓包、链条松脱、跑道破损、器材生锈，就绝对不能玩。书里的安全小卫士说：运动和游戏前，一定要做好准备活动，这样才能防止受伤。</p><p>玩游戏时还要守规则、不做危险动作：不能随便横穿跑道，不能站在跷跷板上晃，不能推别人、拉别人，不能逆着方向滑滑梯或滑冰。如果不小心发生了意外，要马上告诉老师或爸爸妈妈。今天，请你当家里的“危险大搜查”小能手，找一找家里和小区里有哪些危险的地方，记下来告诉大人，一起把它们变成安全小天地！</p></div></details></div>
+      
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <span class="badge">第10期</span>
+        <div>
+          <h3>生病了怎么办 <span class="tag" style="background:#e8590c">课文</span></h3>
+          <div class="sub">第四单元·疾病预防与安全应急 ｜ 一年级</div>
+        </div>
+      </div>
+      <div class="player"><audio class="podcast" controls preload="none" src="https://raw.githubusercontent.com/wilson2000go/Teach-and-Study-G1-tiyu/main/audio/体育/10_体育伴学_一上[课文]_生病了怎么办.mp3">您的浏览器不支持音频播放</audio><details class="guide"><summary>📝 老师讲稿 / 学习要点（点击展开）</summary><div class="guide-body"><p>同学们，我是小雨。人吃五谷杂粮，有时候会生病，这很正常。那生病会有什么表现呢？可能会发热、咳嗽、头疼、肚子疼，或者身上起皮疹。如果你觉得身体不舒服，第一件事就是马上告诉爸爸妈妈或老师，不能自己忍着，也不能硬撑着去上学。</p><p>生病了要这样做：听医生的话去看病，回家好好休息、多喝温水，病没好之前不要去学校，免得传染给其他小朋友。如果去不了学校，要请爸爸妈妈帮忙向老师请假。想少生病，也有办法：讲卫生、睡饱觉、多运动、按时打疫苗。去打疫苗的时候，要勇敢，不哭闹，听医生护士的话。</p><p>今天我们来玩“健康小医生”的角色游戏：你当医生，爸爸妈妈当病人，你问问“哪里不舒服呀”“有没有发烧”，再提醒他们“要多喝水、好好休息”。也可以画一张“我的健康防护卡”，写上“勤洗手、早睡、多运动”，贴在墙上，每天提醒自己，做个少生病、身体棒的健康小达人！</p></div></details></div>
+      
+    </article>
+</div>
+</div>
+<footer><div class="brand"><img class="brand-logo" src="/assets/logo.png" alt="天悦伴学品牌标识"></div><div class="copyright">版权所有：Viola&amp;Daddy ｜ wilson2000@vip.163.com</div></footer>
+<script>
+  const tabs=document.querySelectorAll('.tab');
+  const sections=document.querySelectorAll('.subject-section');
+  function show(sub){
+    tabs.forEach(t=>t.classList.toggle('active', t.dataset.sub===sub));
+    sections.forEach(s=>s.style.display = s.dataset.sub===sub ? 'block':'none');
+  }
+  function curSub(){
+    const t=[...tabs].find(t=>t.classList.contains('active'));
+    return t ? t.dataset.sub : (sections[0] ? sections[0].dataset.sub : '');
+  }
+  // ===== 全局连续播放队列（按当前科目、课文顺序：讲解→原声片段→下一篇讲解…）=====
+  let QUEUE=[], QIDX=-1;
+  function buildQueue(sub){
+    const sec=[...sections].find(s=>s.dataset.sub===sub); if(!sec) return [];
+    const q=[];
+    sec.querySelectorAll('.card').forEach(function(card){
+      const pod=card.querySelector('audio.podcast');
+      if(pod) q.push({el:pod});
+      const sel=card.querySelector('select.src2-sel');
+      const orig=card.querySelector('audio[id^="a-"]');
+      if(sel && orig){ for(let i=0;i<sel.options.length;i++) q.push({el:orig,sel:sel,idx:i}); }
+      else { const single=card.querySelector('audio.orig'); if(single) q.push({el:single}); }
+    });
+    return q;
+  }
+  function refreshQueue(){ QUEUE=buildQueue(curSub()); QIDX=-1; }
+  function playItem(it){
+    if(it.sel){ it.sel.selectedIndex=it.idx; it.sel.dispatchEvent(new Event('change')); }
+    const p=it.el.play(); if(p&&p.catch) p.catch(function(){});
+  }
+  function qIndexOf(el,selIdx){
+    for(let i=0;i<QUEUE.length;i++){ const it=QUEUE[i];
+      if(it.el!==el) continue;
+      if(it.sel){ if(it.idx===selIdx) return i; } else return i; }
+    return -1;
+  }
+  // 互斥：任意音频开始播放时，暂停页面上其他所有音频
+  document.addEventListener('play',function(e){
+    const a=e.target; if(a.tagName!=='AUDIO') return;
+    document.querySelectorAll('audio').forEach(function(o){ if(o!==a) o.pause(); });
+    const sel=(a.id && a.id.indexOf('a-')===0) ? document.getElementById(a.id+'-sel') : null;
+    const idx=qIndexOf(a, sel ? sel.selectedIndex : -1);
+    if(idx>=0) QIDX=idx;
+  },true);
+  // 连续播放：当前曲目结束，自动续播队列下一项
+  document.addEventListener('ended',function(e){
+    const a=e.target; if(a.tagName!=='AUDIO') return;
+    if(QIDX<0 || QIDX>=QUEUE.length) return;
+    if(QUEUE[QIDX].el!==a) return;
+    if(QIDX < QUEUE.length-1){ QIDX++; playItem(QUEUE[QIDX]); }
+  },true);
+  tabs.forEach(t=>t.addEventListener('click',function(){ location.hash=t.dataset.sub; show(t.dataset.sub); refreshQueue(); }));
+  function init(){
+    const h=decodeURIComponent(location.hash.replace('#',''));
+    const subs=[...tabs].map(t=>t.dataset.sub);
+    show(subs.includes(h)?h:subs[0]);
+    refreshQueue();
+  }
+  init();
+  window.addEventListener('hashchange', init);
+
+  const SUB_MAP = {};
+  function subSync(aid){
+    const sel=document.getElementById(aid+'-sel');
+    const box=document.getElementById(aid+'-sub');
+    if(!sel||!box) return;
+    const arr=SUB_MAP[aid]||[];
+    const txt=(arr[sel.selectedIndex]||'').trim();
+    if(!txt){ box.style.display='none'; box.textContent=''; return; }
+    box.style.display='block';
+    box.textContent=txt;
+  }
+  window.addEventListener('DOMContentLoaded',function(){
+    Object.keys(SUB_MAP).forEach(subSync);
+    document.querySelectorAll('audio[id^="a-"]').forEach(function(aud){
+      const box=document.getElementById(aud.id+'-sub');
+      if(!box) return;
+      aud.addEventListener('play',function(){box.classList.add('playing');});
+      aud.addEventListener('pause',function(){box.classList.remove('playing');});
+    });
+  });
+</script></body></html>
